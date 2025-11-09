@@ -254,4 +254,6 @@ CMakeFiles/main.dir/src/main.cc.o: \
  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/strings.h \
  /Users/drr/Duke/Classes/ECE-552/ECE-552-project/cpp_impl/include/Mac.hh \
  /opt/homebrew/Cellar/gcc/15.2.0/include/c++/15/utility \
- /opt/homebrew/Cellar/gcc/15.2.0/include/c++/15/bits/stl_relops.h
+ /opt/homebrew/Cellar/gcc/15.2.0/include/c++/15/bits/stl_relops.h \
+ /Users/drr/Duke/Classes/ECE-552/ECE-552-project/cpp_impl/include/Vpu.hh \
+ /Users/drr/Duke/Classes/ECE-552/ECE-552-project/cpp_impl/include/Vmac.hh
