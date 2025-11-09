@@ -118,7 +118,9 @@ CMakeFiles/main.dir/src/main.cc.o
  /Users/drr/Duke/Classes/ECE-552/ECE-552-project/cpp_impl/include/Mpu.hh
  /Users/drr/Duke/Classes/ECE-552/ECE-552-project/cpp_impl/include/MpuHsa.hh
  /Users/drr/Duke/Classes/ECE-552/ECE-552-project/cpp_impl/include/Vpu.hh
+ /Users/drr/Duke/Classes/ECE-552/ECE-552-project/cpp_impl/include/VpuHsa.hh
  /Users/drr/Duke/Classes/ECE-552/ECE-552-project/cpp_impl/include/WsMac.hh
+ /Users/drr/Duke/Classes/ECE-552/ECE-552-project/cpp_impl/include/mac_t.hh
  /opt/homebrew/Cellar/gcc/15.2.0/include/c++/15/aarch64-apple-darwin23/bits/atomic_word.h
  /opt/homebrew/Cellar/gcc/15.2.0/include/c++/15/aarch64-apple-darwin23/bits/c++allocator.h
  /opt/homebrew/Cellar/gcc/15.2.0/include/c++/15/aarch64-apple-darwin23/bits/c++config.h
