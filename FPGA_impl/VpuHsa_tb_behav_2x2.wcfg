@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="VpuHsa_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="VpuHsa_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="280.006 ns"></ZoomEndTime>
+      <Cursor1Time time="89.411 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="276"></NameColumnWidth>
+      <ValueColumnWidth column_width="100"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="36" />
+   <wvobject fp_name="/VpuHsa_tb/weights_sram" type="array">
+      <obj_property name="ElementShortName">weights_sram[1:0][1:0][3:0]</obj_property>
+      <obj_property name="ObjectShortName">weights_sram[1:0][1:0][3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/VpuHsa_tb/acts_sram" type="array">
+      <obj_property name="ElementShortName">acts_sram[1:0][3:0]</obj_property>
+      <obj_property name="ObjectShortName">acts_sram[1:0][3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/VpuHsa_tb/cycle_ctr" type="array">
+      <obj_property name="ElementShortName">cycle_ctr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">cycle_ctr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/VpuHsa_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/VpuHsa_tb/weight_col_bus" type="array">
+      <obj_property name="ElementShortName">weight_col_bus[1:0][3:0]</obj_property>
+      <obj_property name="ObjectShortName">weight_col_bus[1:0][3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/VpuHsa_tb/weight_col_ix" type="array">
+      <obj_property name="ElementShortName">weight_col_ix[0:0]</obj_property>
+      <obj_property name="ObjectShortName">weight_col_ix[0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/VpuHsa_tb/wEn" type="logic">
+      <obj_property name="ElementShortName">wEn</obj_property>
+      <obj_property name="ObjectShortName">wEn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/VpuHsa_tb/en" type="logic">
+      <obj_property name="ElementShortName">en</obj_property>
+      <obj_property name="ObjectShortName">en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/VpuHsa_tb/act_value" type="array">
+      <obj_property name="ElementShortName">act_value[3:0]</obj_property>
+      <obj_property name="ObjectShortName">act_value[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/VpuHsa_tb/act_col_ix" type="array">
+      <obj_property name="ElementShortName">act_col_ix[0:0]</obj_property>
+      <obj_property name="ObjectShortName">act_col_ix[0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/VpuHsa_tb/result" type="array">
+      <obj_property name="ElementShortName">result[1:0][3:0]</obj_property>
+      <obj_property name="ObjectShortName">result[1:0][3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/VpuHsa_tb/BIT_WIDTH" type="array">
+      <obj_property name="ElementShortName">BIT_WIDTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">BIT_WIDTH[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/VpuHsa_tb/SIZE" type="array">
+      <obj_property name="ElementShortName">SIZE[31:0]</obj_property>
+      <obj_property name="ObjectShortName">SIZE[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/VpuHsa_tb/vpu_hsa/\genblk1[0].genblk1[0].mac /wEn" type="logic">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">wEn</obj_property>
+      <obj_property name="ObjectShortName">wEn</obj_property>
+      <obj_property name="label">00wEn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/VpuHsa_tb/vpu_hsa/\genblk1[0].genblk1[0].mac /weight" type="array">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">weight[3:0]</obj_property>
+      <obj_property name="ObjectShortName">weight[3:0]</obj_property>
+      <obj_property name="label">00weight[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/VpuHsa_tb/vpu_hsa/\genblk1[0].genblk1[0].mac /a" type="array">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">a[3:0]</obj_property>
+      <obj_property name="ObjectShortName">a[3:0]</obj_property>
+      <obj_property name="label">00a[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/VpuHsa_tb/vpu_hsa/\genblk1[0].genblk1[0].mac /cout" type="array">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">cout[3:0]</obj_property>
+      <obj_property name="ObjectShortName">cout[3:0]</obj_property>
+      <obj_property name="label">00cout[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/VpuHsa_tb/vpu_hsa/\genblk1[0].genblk1[1].mac /weight" type="array">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">weight[3:0]</obj_property>
+      <obj_property name="ObjectShortName">weight[3:0]</obj_property>
+      <obj_property name="label">01weight[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/VpuHsa_tb/vpu_hsa/\genblk1[0].genblk1[1].mac /cin" type="array">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">cin[3:0]</obj_property>
+      <obj_property name="ObjectShortName">cin[3:0]</obj_property>
+      <obj_property name="label">01cin[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/VpuHsa_tb/vpu_hsa/\genblk1[0].genblk1[1].mac /w" type="array">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">w[3:0]</obj_property>
+      <obj_property name="ObjectShortName">w[3:0]</obj_property>
+      <obj_property name="label">01w[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/VpuHsa_tb/vpu_hsa/\genblk1[0].genblk1[1].mac /a" type="array">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">a[3:0]</obj_property>
+      <obj_property name="ObjectShortName">a[3:0]</obj_property>
+      <obj_property name="label">01a[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/VpuHsa_tb/vpu_hsa/\genblk1[0].genblk1[1].mac /cout" type="array">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">cout[3:0]</obj_property>
+      <obj_property name="ObjectShortName">cout[3:0]</obj_property>
+      <obj_property name="label">01cout[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/VpuHsa_tb/vpu_hsa/\genblk1[0].genblk1[1].mac /wEn" type="logic">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">wEn</obj_property>
+      <obj_property name="ObjectShortName">wEn</obj_property>
+      <obj_property name="label">01wEn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/VpuHsa_tb/vpu_hsa/\genblk1[1].genblk1[0].mac /wEn" type="logic">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">wEn</obj_property>
+      <obj_property name="ObjectShortName">wEn</obj_property>
+      <obj_property name="label">10wEn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/VpuHsa_tb/vpu_hsa/\genblk1[1].genblk1[1].mac /wEn" type="logic">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">wEn</obj_property>
+      <obj_property name="ObjectShortName">wEn</obj_property>
+      <obj_property name="label">11wEn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/VpuHsa_tb/vpu_hsa/\genblk1[1].genblk1[0].mac /w" type="array">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">w[3:0]</obj_property>
+      <obj_property name="ObjectShortName">w[3:0]</obj_property>
+      <obj_property name="label">10w[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/VpuHsa_tb/vpu_hsa/\genblk1[1].genblk1[1].mac /w" type="array">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">w[3:0]</obj_property>
+      <obj_property name="ObjectShortName">w[3:0]</obj_property>
+      <obj_property name="label">11w[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/VpuHsa_tb/vpu_hsa/\genblk1[1].genblk1[0].mac /a" type="array">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">a[3:0]</obj_property>
+      <obj_property name="ObjectShortName">a[3:0]</obj_property>
+      <obj_property name="label">10a[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/VpuHsa_tb/vpu_hsa/\genblk1[1].genblk1[0].mac /cout" type="array">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">cout[3:0]</obj_property>
+      <obj_property name="ObjectShortName">cout[3:0]</obj_property>
+      <obj_property name="label">10cout[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/VpuHsa_tb/vpu_hsa/demux/in" type="array">
+      <obj_property name="ElementShortName">in[3:0]</obj_property>
+      <obj_property name="ObjectShortName">in[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/VpuHsa_tb/vpu_hsa/demux/sel" type="array">
+      <obj_property name="ElementShortName">sel[0:0]</obj_property>
+      <obj_property name="ObjectShortName">sel[0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/VpuHsa_tb/vpu_hsa/demux/out" type="array">
+      <obj_property name="ElementShortName">out[1:0][3:0]</obj_property>
+      <obj_property name="ObjectShortName">out[1:0][3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/VpuHsa_tb/vpu_hsa/\genblk1[1].genblk1[1].mac /a" type="array">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">a[3:0]</obj_property>
+      <obj_property name="ObjectShortName">a[3:0]</obj_property>
+      <obj_property name="label">11a[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/VpuHsa_tb/vpu_hsa/\genblk1[1].genblk1[1].mac /weight" type="array">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">weight[3:0]</obj_property>
+      <obj_property name="ObjectShortName">weight[3:0]</obj_property>
+      <obj_property name="label">11weight[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/VpuHsa_tb/vpu_hsa/\genblk1[1].genblk1[1].mac /cin" type="array">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">cin[3:0]</obj_property>
+      <obj_property name="ObjectShortName">cin[3:0]</obj_property>
+      <obj_property name="label">11cin[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/VpuHsa_tb/vpu_hsa/\genblk1[1].genblk1[1].mac /cout" type="array">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">cout[3:0]</obj_property>
+      <obj_property name="ObjectShortName">cout[3:0]</obj_property>
+      <obj_property name="label">11cout[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>

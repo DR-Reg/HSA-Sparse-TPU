@@ -1,0 +1,9 @@
+0.7
+2020.2
+Jun 10 2021
+20:04:57
+C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.sim/sim_1/behav/xsim/glbl.v,1623370582,verilog,,,,glbl,,uvm,,,,,,
+C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sim_1/new/VpuHsa_tb.v,1762844699,systemVerilog,,,,VpuHsa_tb,,uvm,,,,,,
+C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/DeMux.sv,1762843227,systemVerilog,,C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/VpuHsa.v,,DeMux,,uvm,,,,,,
+C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/VpuHsa.v,1762844585,systemVerilog,,C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sim_1/new/VpuHsa_tb.v,,VpuHsa,,uvm,,,,,,
+C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/WsMac.v,1762843923,verilog,,,,WsMac,,uvm,,,,,,

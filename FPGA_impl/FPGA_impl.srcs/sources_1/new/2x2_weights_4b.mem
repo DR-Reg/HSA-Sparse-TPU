@@ -1,0 +1,7 @@
+// recall our matrix is tranposed
+// so the following data represents
+// | 2 3 |
+// | 4 5 |
+
+0010 0100   // 2 4
+0011 0101   // 3 5

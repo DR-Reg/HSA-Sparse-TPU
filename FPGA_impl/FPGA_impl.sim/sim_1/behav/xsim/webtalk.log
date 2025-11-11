@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Webtalk v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Tue Nov 11 01:15:23 2025
+# Process ID: 4844
+# Current directory: C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.sim/sim_1/behav/xsim/xsim.dir/VpuHsa_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.sim/sim_1/behav/xsim/xsim.dir/VpuHsa_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Tue Nov 11 01:15:24 2025...
