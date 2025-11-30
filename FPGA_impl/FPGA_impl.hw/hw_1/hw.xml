@@ -1288,7 +1288,7 @@
         <net name="clk_uart"/>
       </nets>
     </probe>
-    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
       <probeOptions Id="DebugProbeParams">
         <Option Id="CAPTURE_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
         <Option Id="COMPARE_VALUE.0" value="eq32&apos;hXXXX_XXXX"/>
@@ -1340,7 +1340,7 @@
         <net name="clk_uart_counter[0]"/>
       </nets>
     </probe>
-    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
       <probeOptions Id="DebugProbeParams">
         <Option Id="CAPTURE_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
         <Option Id="COMPARE_VALUE.0" value="eq32&apos;hXXXX_XXXX"/>
@@ -1466,6 +1466,58 @@
     </probe>
     <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
       <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe2[31:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="frame_received[31]"/>
+        <net name="frame_received[30]"/>
+        <net name="frame_received[29]"/>
+        <net name="frame_received[28]"/>
+        <net name="frame_received[27]"/>
+        <net name="frame_received[26]"/>
+        <net name="frame_received[25]"/>
+        <net name="frame_received[24]"/>
+        <net name="frame_received[23]"/>
+        <net name="frame_received[22]"/>
+        <net name="frame_received[21]"/>
+        <net name="frame_received[20]"/>
+        <net name="frame_received[19]"/>
+        <net name="frame_received[18]"/>
+        <net name="frame_received[17]"/>
+        <net name="frame_received[16]"/>
+        <net name="frame_received[15]"/>
+        <net name="frame_received[14]"/>
+        <net name="frame_received[13]"/>
+        <net name="frame_received[12]"/>
+        <net name="frame_received[11]"/>
+        <net name="frame_received[10]"/>
+        <net name="frame_received[9]"/>
+        <net name="frame_received[8]"/>
+        <net name="frame_received[7]"/>
+        <net name="frame_received[6]"/>
+        <net name="frame_received[5]"/>
+        <net name="frame_received[4]"/>
+        <net name="frame_received[3]"/>
+        <net name="frame_received[2]"/>
+        <net name="frame_received[1]"/>
+        <net name="frame_received[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
         <Option Id="CAPTURE_COMPARE_VALUE" value="eq8&apos;hXX"/>
         <Option Id="COMPARE_VALUE.0" value="eq8&apos;hXX"/>
         <Option Id="DISPLAY_AS_ENUM" value="1"/>
@@ -1555,7 +1607,7 @@
         <net name="reset_IBUF"/>
       </nets>
     </probe>
-    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
       <probeOptions Id="DebugProbeParams">
         <Option Id="CAPTURE_COMPARE_VALUE" value="eq4&apos;hX"/>
         <Option Id="COMPARE_VALUE.0" value="eq4&apos;hX"/>
@@ -1579,7 +1631,7 @@
         <net name="result[0][0]"/>
       </nets>
     </probe>
-    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
       <probeOptions Id="DebugProbeParams">
         <Option Id="CAPTURE_COMPARE_VALUE" value="eq4&apos;hX"/>
         <Option Id="COMPARE_VALUE.0" value="eq4&apos;hX"/>
@@ -1656,6 +1708,58 @@
     </probe>
     <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
       <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe3[31:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="rx_data_frame[31]"/>
+        <net name="rx_data_frame[30]"/>
+        <net name="rx_data_frame[29]"/>
+        <net name="rx_data_frame[28]"/>
+        <net name="rx_data_frame[27]"/>
+        <net name="rx_data_frame[26]"/>
+        <net name="rx_data_frame[25]"/>
+        <net name="rx_data_frame[24]"/>
+        <net name="rx_data_frame[23]"/>
+        <net name="rx_data_frame[22]"/>
+        <net name="rx_data_frame[21]"/>
+        <net name="rx_data_frame[20]"/>
+        <net name="rx_data_frame[19]"/>
+        <net name="rx_data_frame[18]"/>
+        <net name="rx_data_frame[17]"/>
+        <net name="rx_data_frame[16]"/>
+        <net name="rx_data_frame[15]"/>
+        <net name="rx_data_frame[14]"/>
+        <net name="rx_data_frame[13]"/>
+        <net name="rx_data_frame[12]"/>
+        <net name="rx_data_frame[11]"/>
+        <net name="rx_data_frame[10]"/>
+        <net name="rx_data_frame[9]"/>
+        <net name="rx_data_frame[8]"/>
+        <net name="rx_data_frame[7]"/>
+        <net name="rx_data_frame[6]"/>
+        <net name="rx_data_frame[5]"/>
+        <net name="rx_data_frame[4]"/>
+        <net name="rx_data_frame[3]"/>
+        <net name="rx_data_frame[2]"/>
+        <net name="rx_data_frame[1]"/>
+        <net name="rx_data_frame[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
         <Option Id="CAPTURE_COMPARE_VALUE" value="eq8&apos;hXX"/>
         <Option Id="COMPARE_VALUE.0" value="eq8&apos;hXX"/>
         <Option Id="DISPLAY_AS_ENUM" value="1"/>
@@ -1682,7 +1786,7 @@
         <net name="rx_data_frame[0]"/>
       </nets>
     </probe>
-    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
       <probeOptions Id="DebugProbeParams">
         <Option Id="CAPTURE_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
         <Option Id="COMPARE_VALUE.0" value="eq32&apos;hXXXX_XXXX"/>

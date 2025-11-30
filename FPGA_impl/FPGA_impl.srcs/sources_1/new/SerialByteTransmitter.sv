@@ -25,7 +25,8 @@ module SerialByteTransmitter (
     input send,                             // this should pulse on for 1 clk_uart cycle to begin transmission
     input clk_uart,                         // expects this to be 16 times the clock rate
 
-    output reg tx
+    output reg tx,
+    output reg finished_sending 
 );
     reg [10:0] send_frame;                         // <start><frame><even parity><stop>
     reg [3:0] counter;                             // for baud division, 
@@ -36,25 +37,29 @@ module SerialByteTransmitter (
 
     always @(posedge clk_uart) begin
         if (sending) begin
-            tx = send_frame[bit_counter];
+            tx <= send_frame[bit_counter];
             if (counter == 15) begin
-                bit_counter = bit_counter + 1;
-                if (bit_counter == 11) begin
-                    sending = 0;
+                bit_counter <= bit_counter + 1;
+                if (bit_counter == 10) begin
+                    sending <= 0;
+                    finished_sending <= 1;          // pulse for 1 clock cycle
                 end
-                counter = 0;
+                counter <= 0;
+            end else begin
+                counter <= counter + 1;          // counter automatically wraps
             end
-            counter += 1;                               // counter automatically wraps
         end else if (send) begin                        // Guard after so don't stop sending halfway
-            send_frame[10]  = 1;            // stop bit
-            send_frame[9]   = ^data_frame;  // parity
-            send_frame[8:1] = data_frame;   // LSB first per UART protocol
-            send_frame[0]   = 0;            // start bit
-            counter = 0;
-            sending = 1;
-            bit_counter = 0;
+            send_frame[10]  <= 1;            // stop bit
+            send_frame[9]   <= ^data_frame;  // parity
+            send_frame[8:1] <= data_frame;   // LSB first per UART protocol
+            send_frame[0]   <= 0;            // start bit
+            counter <= 0;
+            sending <= 1;
+            bit_counter <= 0;
+            finished_sending <= 0;
         end else begin
-            tx = 1;                         // idle set to high
+            tx <= 1;                         // idle set to high
+            finished_sending <= 0;           
         end
     end
 endmodule 

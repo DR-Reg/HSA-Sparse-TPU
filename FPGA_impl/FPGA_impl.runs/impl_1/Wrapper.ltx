@@ -64,13 +64,16 @@
                                 "direction": "IN",
                                 "isVector": true,
                                 "leftIndex": 0,
-                                "rightIndex": 30,
+                                "rightIndex": 31,
                                 "portIndex": 2,
                                 "nets": [
                                     {
                                         "name": "frame_received",
                                         "isBus": true,
                                         "subnets": [
+                                            {
+                                                "name": "frame_received[31]"
+                                            },
                                             {
                                                 "name": "frame_received[30]"
                                             },
@@ -169,35 +172,22 @@
                                 ]
                             },
                             {
-                                "name": "probe2",
+                                "name": "probe3",
                                 "id": 3,
                                 "type": "DATA_TRIGGER",
                                 "direction": "IN",
                                 "isVector": true,
-                                "leftIndex": 31,
-                                "rightIndex": 31,
-                                "portIndex": 2,
-                                "nets": [
-                                    {
-                                        "name": "<const0>_1",
-                                        "isBus": false
-                                    }
-                                ]
-                            },
-                            {
-                                "name": "probe3",
-                                "id": 4,
-                                "type": "DATA_TRIGGER",
-                                "direction": "IN",
-                                "isVector": true,
                                 "leftIndex": 0,
-                                "rightIndex": 30,
+                                "rightIndex": 31,
                                 "portIndex": 3,
                                 "nets": [
                                     {
                                         "name": "rx_data_frame",
                                         "isBus": true,
                                         "subnets": [
+                                            {
+                                                "name": "rx_data_frame[31]"
+                                            },
                                             {
                                                 "name": "rx_data_frame[30]"
                                             },
@@ -292,22 +282,6 @@
                                                 "name": "rx_data_frame[0]"
                                             }
                                         ]
-                                    }
-                                ]
-                            },
-                            {
-                                "name": "probe3",
-                                "id": 5,
-                                "type": "DATA_TRIGGER",
-                                "direction": "IN",
-                                "isVector": true,
-                                "leftIndex": 31,
-                                "rightIndex": 31,
-                                "portIndex": 3,
-                                "nets": [
-                                    {
-                                        "name": "<const0>",
-                                        "isBus": false
                                     }
                                 ]
                             }
