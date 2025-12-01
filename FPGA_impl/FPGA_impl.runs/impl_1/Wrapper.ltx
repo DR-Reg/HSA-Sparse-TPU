@@ -36,7 +36,7 @@
                                 "portIndex": 0,
                                 "nets": [
                                     {
-                                        "name": "UART_TXD_IN_IBUF",
+                                        "name": "got_magic",
                                         "isBus": false
                                     }
                                 ]
@@ -64,108 +64,492 @@
                                 "direction": "IN",
                                 "isVector": true,
                                 "leftIndex": 0,
+                                "rightIndex": 3,
+                                "portIndex": 2,
+                                "nets": [
+                                    {
+                                        "name": "acts_sram[0]",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "acts_sram[0][3]"
+                                            },
+                                            {
+                                                "name": "acts_sram[0][2]"
+                                            },
+                                            {
+                                                "name": "acts_sram[0][1]"
+                                            },
+                                            {
+                                                "name": "acts_sram[0][0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe2",
+                                "id": 3,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 4,
+                                "rightIndex": 7,
+                                "portIndex": 2,
+                                "nets": [
+                                    {
+                                        "name": "acts_sram[1]",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "acts_sram[1][3]"
+                                            },
+                                            {
+                                                "name": "acts_sram[1][2]"
+                                            },
+                                            {
+                                                "name": "acts_sram[1][1]"
+                                            },
+                                            {
+                                                "name": "acts_sram[1][0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe2",
+                                "id": 4,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 8,
+                                "rightIndex": 8,
+                                "portIndex": 2,
+                                "nets": [
+                                    {
+                                        "name": "<const0>_1",
+                                        "isBus": false,
+                                        "parentNetId": 10
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe2",
+                                "id": 5,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 9,
+                                "rightIndex": 9,
+                                "portIndex": 2,
+                                "nets": [
+                                    {
+                                        "name": "<const0>_2",
+                                        "isBus": false,
+                                        "parentNetId": 10
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe2",
+                                "id": 6,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 10,
+                                "rightIndex": 10,
+                                "portIndex": 2,
+                                "nets": [
+                                    {
+                                        "name": "<const0>_3",
+                                        "isBus": false,
+                                        "parentNetId": 10
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe2",
+                                "id": 7,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 11,
+                                "rightIndex": 11,
+                                "portIndex": 2,
+                                "nets": [
+                                    {
+                                        "name": "<const0>_4",
+                                        "isBus": false,
+                                        "parentNetId": 10
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe2",
+                                "id": 8,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 12,
+                                "rightIndex": 12,
+                                "portIndex": 2,
+                                "nets": [
+                                    {
+                                        "name": "<const0>_5",
+                                        "isBus": false,
+                                        "parentNetId": 10
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe2",
+                                "id": 9,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 13,
+                                "rightIndex": 13,
+                                "portIndex": 2,
+                                "nets": [
+                                    {
+                                        "name": "<const0>_6",
+                                        "isBus": false,
+                                        "parentNetId": 10
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe2",
+                                "id": 10,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 14,
+                                "rightIndex": 14,
+                                "portIndex": 2,
+                                "nets": [
+                                    {
+                                        "name": "<const0>_7",
+                                        "isBus": false,
+                                        "parentNetId": 10
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe2",
+                                "id": 11,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 15,
+                                "rightIndex": 15,
+                                "portIndex": 2,
+                                "nets": [
+                                    {
+                                        "name": "<const0>_8",
+                                        "isBus": false,
+                                        "parentNetId": 10
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe2",
+                                "id": 12,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 16,
+                                "rightIndex": 16,
+                                "portIndex": 2,
+                                "nets": [
+                                    {
+                                        "name": "<const0>_9",
+                                        "isBus": false,
+                                        "parentNetId": 10
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe2",
+                                "id": 13,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 17,
+                                "rightIndex": 17,
+                                "portIndex": 2,
+                                "nets": [
+                                    {
+                                        "name": "<const0>_10",
+                                        "isBus": false,
+                                        "parentNetId": 10
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe2",
+                                "id": 14,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 18,
+                                "rightIndex": 18,
+                                "portIndex": 2,
+                                "nets": [
+                                    {
+                                        "name": "<const0>_11",
+                                        "isBus": false,
+                                        "parentNetId": 10
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe2",
+                                "id": 15,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 19,
+                                "rightIndex": 19,
+                                "portIndex": 2,
+                                "nets": [
+                                    {
+                                        "name": "<const0>_12",
+                                        "isBus": false,
+                                        "parentNetId": 10
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe2",
+                                "id": 16,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 20,
+                                "rightIndex": 20,
+                                "portIndex": 2,
+                                "nets": [
+                                    {
+                                        "name": "<const0>_13",
+                                        "isBus": false,
+                                        "parentNetId": 10
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe2",
+                                "id": 17,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 21,
+                                "rightIndex": 21,
+                                "portIndex": 2,
+                                "nets": [
+                                    {
+                                        "name": "<const0>_14",
+                                        "isBus": false,
+                                        "parentNetId": 10
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe2",
+                                "id": 18,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 22,
+                                "rightIndex": 22,
+                                "portIndex": 2,
+                                "nets": [
+                                    {
+                                        "name": "<const0>_15",
+                                        "isBus": false,
+                                        "parentNetId": 10
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe2",
+                                "id": 19,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 23,
+                                "rightIndex": 23,
+                                "portIndex": 2,
+                                "nets": [
+                                    {
+                                        "name": "<const0>_16",
+                                        "isBus": false,
+                                        "parentNetId": 10
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe2",
+                                "id": 20,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 24,
+                                "rightIndex": 24,
+                                "portIndex": 2,
+                                "nets": [
+                                    {
+                                        "name": "<const0>_17",
+                                        "isBus": false,
+                                        "parentNetId": 10
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe2",
+                                "id": 21,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 25,
+                                "rightIndex": 25,
+                                "portIndex": 2,
+                                "nets": [
+                                    {
+                                        "name": "<const0>_18",
+                                        "isBus": false,
+                                        "parentNetId": 10
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe2",
+                                "id": 22,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 26,
+                                "rightIndex": 26,
+                                "portIndex": 2,
+                                "nets": [
+                                    {
+                                        "name": "<const0>_19",
+                                        "isBus": false,
+                                        "parentNetId": 10
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe2",
+                                "id": 23,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 27,
+                                "rightIndex": 27,
+                                "portIndex": 2,
+                                "nets": [
+                                    {
+                                        "name": "<const0>_20",
+                                        "isBus": false,
+                                        "parentNetId": 10
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe2",
+                                "id": 24,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 28,
+                                "rightIndex": 28,
+                                "portIndex": 2,
+                                "nets": [
+                                    {
+                                        "name": "<const0>_21",
+                                        "isBus": false,
+                                        "parentNetId": 10
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe2",
+                                "id": 25,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 29,
+                                "rightIndex": 29,
+                                "portIndex": 2,
+                                "nets": [
+                                    {
+                                        "name": "<const0>_22",
+                                        "isBus": false,
+                                        "parentNetId": 10
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe2",
+                                "id": 26,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 30,
+                                "rightIndex": 30,
+                                "portIndex": 2,
+                                "nets": [
+                                    {
+                                        "name": "<const0>_23",
+                                        "isBus": false,
+                                        "parentNetId": 10
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe2",
+                                "id": 27,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 31,
                                 "rightIndex": 31,
                                 "portIndex": 2,
                                 "nets": [
                                     {
-                                        "name": "uart_data_frame",
+                                        "name": "<const0>_24",
+                                        "isBus": false,
+                                        "parentNetId": 10
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe3",
+                                "id": 28,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 3,
+                                "portIndex": 3,
+                                "nets": [
+                                    {
+                                        "name": "weights_sram[1][1]",
                                         "isBus": true,
                                         "subnets": [
                                             {
-                                                "name": "uart_data_frame[31]"
+                                                "name": "weights_sram[1][1][3]"
                                             },
                                             {
-                                                "name": "uart_data_frame[30]"
+                                                "name": "weights_sram[1][1][2]"
                                             },
                                             {
-                                                "name": "uart_data_frame[29]"
+                                                "name": "weights_sram[1][1][1]"
                                             },
                                             {
-                                                "name": "uart_data_frame[28]"
-                                            },
-                                            {
-                                                "name": "uart_data_frame[27]"
-                                            },
-                                            {
-                                                "name": "uart_data_frame[26]"
-                                            },
-                                            {
-                                                "name": "uart_data_frame[25]"
-                                            },
-                                            {
-                                                "name": "uart_data_frame[24]"
-                                            },
-                                            {
-                                                "name": "uart_data_frame[23]"
-                                            },
-                                            {
-                                                "name": "uart_data_frame[22]"
-                                            },
-                                            {
-                                                "name": "uart_data_frame[21]"
-                                            },
-                                            {
-                                                "name": "uart_data_frame[20]"
-                                            },
-                                            {
-                                                "name": "uart_data_frame[19]"
-                                            },
-                                            {
-                                                "name": "uart_data_frame[18]"
-                                            },
-                                            {
-                                                "name": "uart_data_frame[17]"
-                                            },
-                                            {
-                                                "name": "uart_data_frame[16]"
-                                            },
-                                            {
-                                                "name": "uart_data_frame[15]"
-                                            },
-                                            {
-                                                "name": "uart_data_frame[14]"
-                                            },
-                                            {
-                                                "name": "uart_data_frame[13]"
-                                            },
-                                            {
-                                                "name": "uart_data_frame[12]"
-                                            },
-                                            {
-                                                "name": "uart_data_frame[11]"
-                                            },
-                                            {
-                                                "name": "uart_data_frame[10]"
-                                            },
-                                            {
-                                                "name": "uart_data_frame[9]"
-                                            },
-                                            {
-                                                "name": "uart_data_frame[8]"
-                                            },
-                                            {
-                                                "name": "uart_data_frame[7]"
-                                            },
-                                            {
-                                                "name": "uart_data_frame[6]"
-                                            },
-                                            {
-                                                "name": "uart_data_frame[5]"
-                                            },
-                                            {
-                                                "name": "uart_data_frame[4]"
-                                            },
-                                            {
-                                                "name": "uart_data_frame[3]"
-                                            },
-                                            {
-                                                "name": "uart_data_frame[2]"
-                                            },
-                                            {
-                                                "name": "uart_data_frame[1]"
-                                            },
-                                            {
-                                                "name": "uart_data_frame[0]"
+                                                "name": "weights_sram[1][1][0]"
                                             }
                                         ]
                                     }
@@ -173,115 +557,393 @@
                             },
                             {
                                 "name": "probe3",
-                                "id": 3,
+                                "id": 29,
                                 "type": "DATA_TRIGGER",
                                 "direction": "IN",
                                 "isVector": true,
-                                "leftIndex": 0,
+                                "leftIndex": 4,
+                                "rightIndex": 7,
+                                "portIndex": 3,
+                                "nets": [
+                                    {
+                                        "name": "weights_sram[1][0]",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "weights_sram[1][0][3]"
+                                            },
+                                            {
+                                                "name": "weights_sram[1][0][2]"
+                                            },
+                                            {
+                                                "name": "weights_sram[1][0][1]"
+                                            },
+                                            {
+                                                "name": "weights_sram[1][0][0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe3",
+                                "id": 30,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 8,
+                                "rightIndex": 11,
+                                "portIndex": 3,
+                                "nets": [
+                                    {
+                                        "name": "weights_sram[0][1]",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "weights_sram[0][1][3]"
+                                            },
+                                            {
+                                                "name": "weights_sram[0][1][2]"
+                                            },
+                                            {
+                                                "name": "weights_sram[0][1][1]"
+                                            },
+                                            {
+                                                "name": "weights_sram[0][1][0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe3",
+                                "id": 31,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 12,
+                                "rightIndex": 15,
+                                "portIndex": 3,
+                                "nets": [
+                                    {
+                                        "name": "weights_sram[0][0]",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "weights_sram[0][0][3]"
+                                            },
+                                            {
+                                                "name": "weights_sram[0][0][2]"
+                                            },
+                                            {
+                                                "name": "weights_sram[0][0][1]"
+                                            },
+                                            {
+                                                "name": "weights_sram[0][0][0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe3",
+                                "id": 32,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 16,
+                                "rightIndex": 16,
+                                "portIndex": 3,
+                                "nets": [
+                                    {
+                                        "name": "<const0>_25",
+                                        "isBus": false,
+                                        "parentNetId": 10
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe3",
+                                "id": 33,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 17,
+                                "rightIndex": 17,
+                                "portIndex": 3,
+                                "nets": [
+                                    {
+                                        "name": "<const0>_26",
+                                        "isBus": false,
+                                        "parentNetId": 10
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe3",
+                                "id": 34,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 18,
+                                "rightIndex": 18,
+                                "portIndex": 3,
+                                "nets": [
+                                    {
+                                        "name": "<const0>_27",
+                                        "isBus": false,
+                                        "parentNetId": 10
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe3",
+                                "id": 35,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 19,
+                                "rightIndex": 19,
+                                "portIndex": 3,
+                                "nets": [
+                                    {
+                                        "name": "<const0>_28",
+                                        "isBus": false,
+                                        "parentNetId": 10
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe3",
+                                "id": 36,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 20,
+                                "rightIndex": 20,
+                                "portIndex": 3,
+                                "nets": [
+                                    {
+                                        "name": "<const0>_29",
+                                        "isBus": false,
+                                        "parentNetId": 10
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe3",
+                                "id": 37,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 21,
+                                "rightIndex": 21,
+                                "portIndex": 3,
+                                "nets": [
+                                    {
+                                        "name": "<const0>_30",
+                                        "isBus": false,
+                                        "parentNetId": 10
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe3",
+                                "id": 38,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 22,
+                                "rightIndex": 22,
+                                "portIndex": 3,
+                                "nets": [
+                                    {
+                                        "name": "<const0>_31",
+                                        "isBus": false,
+                                        "parentNetId": 10
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe3",
+                                "id": 39,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 23,
+                                "rightIndex": 23,
+                                "portIndex": 3,
+                                "nets": [
+                                    {
+                                        "name": "<const0>_32",
+                                        "isBus": false,
+                                        "parentNetId": 10
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe3",
+                                "id": 40,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 24,
+                                "rightIndex": 24,
+                                "portIndex": 3,
+                                "nets": [
+                                    {
+                                        "name": "<const0>_33",
+                                        "isBus": false,
+                                        "parentNetId": 10
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe3",
+                                "id": 41,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 25,
+                                "rightIndex": 25,
+                                "portIndex": 3,
+                                "nets": [
+                                    {
+                                        "name": "<const0>_34",
+                                        "isBus": false,
+                                        "parentNetId": 10
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe3",
+                                "id": 42,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 26,
+                                "rightIndex": 26,
+                                "portIndex": 3,
+                                "nets": [
+                                    {
+                                        "name": "<const0>_35",
+                                        "isBus": false,
+                                        "parentNetId": 10
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe3",
+                                "id": 43,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 27,
+                                "rightIndex": 27,
+                                "portIndex": 3,
+                                "nets": [
+                                    {
+                                        "name": "<const0>_36",
+                                        "isBus": false,
+                                        "parentNetId": 10
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe3",
+                                "id": 44,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 28,
+                                "rightIndex": 28,
+                                "portIndex": 3,
+                                "nets": [
+                                    {
+                                        "name": "<const0>_37",
+                                        "isBus": false,
+                                        "parentNetId": 10
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe3",
+                                "id": 45,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 29,
+                                "rightIndex": 29,
+                                "portIndex": 3,
+                                "nets": [
+                                    {
+                                        "name": "<const0>_38",
+                                        "isBus": false,
+                                        "parentNetId": 10
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe3",
+                                "id": 46,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 30,
+                                "rightIndex": 30,
+                                "portIndex": 3,
+                                "nets": [
+                                    {
+                                        "name": "<const0>_39",
+                                        "isBus": false,
+                                        "parentNetId": 10
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe3",
+                                "id": 47,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 31,
                                 "rightIndex": 31,
                                 "portIndex": 3,
                                 "nets": [
                                     {
-                                        "name": "rx_data_frame",
-                                        "isBus": true,
-                                        "subnets": [
-                                            {
-                                                "name": "rx_data_frame[31]"
-                                            },
-                                            {
-                                                "name": "rx_data_frame[30]"
-                                            },
-                                            {
-                                                "name": "rx_data_frame[29]"
-                                            },
-                                            {
-                                                "name": "rx_data_frame[28]"
-                                            },
-                                            {
-                                                "name": "rx_data_frame[27]"
-                                            },
-                                            {
-                                                "name": "rx_data_frame[26]"
-                                            },
-                                            {
-                                                "name": "rx_data_frame[25]"
-                                            },
-                                            {
-                                                "name": "rx_data_frame[24]"
-                                            },
-                                            {
-                                                "name": "rx_data_frame[23]"
-                                            },
-                                            {
-                                                "name": "rx_data_frame[22]"
-                                            },
-                                            {
-                                                "name": "rx_data_frame[21]"
-                                            },
-                                            {
-                                                "name": "rx_data_frame[20]"
-                                            },
-                                            {
-                                                "name": "rx_data_frame[19]"
-                                            },
-                                            {
-                                                "name": "rx_data_frame[18]"
-                                            },
-                                            {
-                                                "name": "rx_data_frame[17]"
-                                            },
-                                            {
-                                                "name": "rx_data_frame[16]"
-                                            },
-                                            {
-                                                "name": "rx_data_frame[15]"
-                                            },
-                                            {
-                                                "name": "rx_data_frame[14]"
-                                            },
-                                            {
-                                                "name": "rx_data_frame[13]"
-                                            },
-                                            {
-                                                "name": "rx_data_frame[12]"
-                                            },
-                                            {
-                                                "name": "rx_data_frame[11]"
-                                            },
-                                            {
-                                                "name": "rx_data_frame[10]"
-                                            },
-                                            {
-                                                "name": "rx_data_frame[9]"
-                                            },
-                                            {
-                                                "name": "rx_data_frame[8]"
-                                            },
-                                            {
-                                                "name": "rx_data_frame[7]"
-                                            },
-                                            {
-                                                "name": "rx_data_frame[6]"
-                                            },
-                                            {
-                                                "name": "rx_data_frame[5]"
-                                            },
-                                            {
-                                                "name": "rx_data_frame[4]"
-                                            },
-                                            {
-                                                "name": "rx_data_frame[3]"
-                                            },
-                                            {
-                                                "name": "rx_data_frame[2]"
-                                            },
-                                            {
-                                                "name": "rx_data_frame[1]"
-                                            },
-                                            {
-                                                "name": "rx_data_frame[0]"
-                                            }
-                                        ]
+                                        "name": "<const0>",
+                                        "isBus": false,
+                                        "parentNetId": 10
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "parent_nets": [
+                    {
+                        "id": 10,
+                        "name": "<const0>",
+                        "const_load": "GND",
+                        "state_reg": [
+                            {
+                                "name": "FSM_sequential_operating_mode_reg[0]",
+                                "states": [
+                                    {
+                                        "name": "iSTATE",
+                                        "val": "01"
+                                    },
+                                    {
+                                        "name": "iSTATE0",
+                                        "val": "10"
+                                    },
+                                    {
+                                        "name": "iSTATE1",
+                                        "val": "00"
+                                    },
+                                    {
+                                        "name": "iSTATE2",
+                                        "val": "11"
                                     }
                                 ]
                             }

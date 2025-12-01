@@ -11,22 +11,15 @@
    <zoom_setting>
       <ZoomStartTime time="0"></ZoomStartTime>
       <ZoomEndTime time="1,024"></ZoomEndTime>
-      <Cursor1Time time="44"></Cursor1Time>
+      <Cursor1Time time="0"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="283"></NameColumnWidth>
-      <ValueColumnWidth column_width="138"></ValueColumnWidth>
+      <ValueColumnWidth column_width="134"></ValueColumnWidth>
    </column_width_setting>
    <WVObjectSize size="8" />
    <wave_markers>
    </wave_markers>
-   <wvobject fp_name="UART_TXD_IN_IBUF" type="logic">
-      <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">UART_TXD_IN_IBUF</obj_property>
-      <obj_property name="ObjectShortName">UART_TXD_IN_IBUF</obj_property>
-      <obj_property name="LABELRADIX">true</obj_property>
-      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
-   </wvobject>
    <wvobject fp_name="frame_ready" type="logic">
       <obj_property name="DisplayName">FullPathName</obj_property>
       <obj_property name="ElementShortName">frame_ready</obj_property>
@@ -34,50 +27,57 @@
       <obj_property name="LABELRADIX">true</obj_property>
       <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
    </wvobject>
-   <wvobject fp_name="frame_received" type="array">
+   <wvobject fp_name="got_magic" type="logic">
       <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">frame_received[31:0]</obj_property>
-      <obj_property name="ObjectShortName">frame_received[31:0]</obj_property>
+      <obj_property name="ElementShortName">got_magic</obj_property>
+      <obj_property name="ObjectShortName">got_magic</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="acts_sram[0]" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">acts_sram[0][3:0]</obj_property>
+      <obj_property name="ObjectShortName">acts_sram[0][3:0]</obj_property>
       <obj_property name="Radix">HEXRADIX</obj_property>
       <obj_property name="LABELRADIX">true</obj_property>
       <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
    </wvobject>
-   <wvobject fp_name="rx_data_frame" type="array">
+   <wvobject fp_name="acts_sram[1]" type="array">
       <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">rx_data_frame[31:0]</obj_property>
-      <obj_property name="ObjectShortName">rx_data_frame[31:0]</obj_property>
+      <obj_property name="ElementShortName">acts_sram[1][3:0]</obj_property>
+      <obj_property name="ObjectShortName">acts_sram[1][3:0]</obj_property>
       <obj_property name="Radix">HEXRADIX</obj_property>
       <obj_property name="LABELRADIX">true</obj_property>
       <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
    </wvobject>
-   <wvobject fp_name="frame_received" type="array">
+   <wvobject fp_name="weights_sram[0][0]" type="array">
       <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">frame_received[31:0]</obj_property>
-      <obj_property name="ObjectShortName">frame_received[31:0]</obj_property>
+      <obj_property name="ElementShortName">weights_sram[0][0][3:0]</obj_property>
+      <obj_property name="ObjectShortName">weights_sram[0][0][3:0]</obj_property>
       <obj_property name="Radix">HEXRADIX</obj_property>
       <obj_property name="LABELRADIX">true</obj_property>
       <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
    </wvobject>
-   <wvobject fp_name="rx_data_frame" type="array">
+   <wvobject fp_name="weights_sram[0][1]" type="array">
       <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">rx_data_frame[31:0]</obj_property>
-      <obj_property name="ObjectShortName">rx_data_frame[31:0]</obj_property>
+      <obj_property name="ElementShortName">weights_sram[0][1][3:0]</obj_property>
+      <obj_property name="ObjectShortName">weights_sram[0][1][3:0]</obj_property>
       <obj_property name="Radix">HEXRADIX</obj_property>
       <obj_property name="LABELRADIX">true</obj_property>
       <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
    </wvobject>
-   <wvobject fp_name="frame_received" type="array">
+   <wvobject fp_name="weights_sram[1][0]" type="array">
       <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">frame_received[31:0]</obj_property>
-      <obj_property name="ObjectShortName">frame_received[31:0]</obj_property>
+      <obj_property name="ElementShortName">weights_sram[1][0][3:0]</obj_property>
+      <obj_property name="ObjectShortName">weights_sram[1][0][3:0]</obj_property>
       <obj_property name="Radix">HEXRADIX</obj_property>
       <obj_property name="LABELRADIX">true</obj_property>
       <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
    </wvobject>
-   <wvobject fp_name="rx_data_frame" type="array">
+   <wvobject fp_name="weights_sram[1][1]" type="array">
       <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">rx_data_frame[31:0]</obj_property>
-      <obj_property name="ObjectShortName">rx_data_frame[31:0]</obj_property>
+      <obj_property name="ElementShortName">weights_sram[1][1][3:0]</obj_property>
+      <obj_property name="ObjectShortName">weights_sram[1][1][3:0]</obj_property>
       <obj_property name="Radix">HEXRADIX</obj_property>
       <obj_property name="LABELRADIX">true</obj_property>
       <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>

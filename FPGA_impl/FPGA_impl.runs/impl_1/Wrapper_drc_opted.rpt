@@ -1,7 +1,7 @@
 Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
-| Date         : Sun Nov 30 18:31:34 2025
+| Date         : Sun Nov 30 22:51:08 2025
 | Host         : P2-07 running 64-bit major release  (build 9200)
 | Command      : report_drc -file Wrapper_drc_opted.rpt -pb Wrapper_drc_opted.pb -rpx Wrapper_drc_opted.rpx
 | Design       : Wrapper
@@ -49,11 +49,12 @@ Related violations: <none>
 
 PLHOLDVIO-2#1 Warning
 Non-Optimal connections which could lead to hold violations  
-A LUT vpu_hsa/row[0].col[0].left_latches[0][0][3]_i_2 is driving clock pin of 7 cells. This could lead to large hold time violations. Involved cells are:
+A LUT vpu_hsa/row[0].col[0].left_latches[0][0][3]_i_1 is driving clock pin of 8 cells. This could lead to large hold time violations. Involved cells are:
 vpu_hsa/row[0].col[0].left_latches_reg[0][0][0],
 vpu_hsa/row[0].col[0].left_latches_reg[0][0][1],
 vpu_hsa/row[0].col[0].left_latches_reg[0][0][2],
 vpu_hsa/row[0].col[0].left_latches_reg[0][0][3],
+vpu_hsa/row[1].col[0].left_latches_reg[1][0][0],
 vpu_hsa/row[1].col[0].left_latches_reg[1][0][1],
 vpu_hsa/row[1].col[0].left_latches_reg[1][0][2]
 vpu_hsa/row[1].col[0].left_latches_reg[1][0][3]
@@ -61,11 +62,12 @@ Related violations: <none>
 
 PLHOLDVIO-2#2 Warning
 Non-Optimal connections which could lead to hold violations  
-A LUT vpu_hsa/row[0].col[1].left_latches[0][1][3]_i_2 is driving clock pin of 7 cells. This could lead to large hold time violations. Involved cells are:
+A LUT vpu_hsa/row[0].col[1].left_latches[0][1][3]_i_2 is driving clock pin of 8 cells. This could lead to large hold time violations. Involved cells are:
 vpu_hsa/row[0].col[1].left_latches_reg[0][1][0],
 vpu_hsa/row[0].col[1].left_latches_reg[0][1][1],
 vpu_hsa/row[0].col[1].left_latches_reg[0][1][2],
 vpu_hsa/row[0].col[1].left_latches_reg[0][1][3],
+vpu_hsa/row[1].col[1].left_latches_reg[1][1][0],
 vpu_hsa/row[1].col[1].left_latches_reg[1][1][1],
 vpu_hsa/row[1].col[1].left_latches_reg[1][1][2]
 vpu_hsa/row[1].col[1].left_latches_reg[1][1][3]
