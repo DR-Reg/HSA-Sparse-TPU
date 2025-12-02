@@ -3,34 +3,23 @@ import time
 import random
 import numpy as np
 
-# port.close()
-# REMEMBER: only send in groups of 4 bytes!
-# port.write_data([0xBA, 0xDB, 0xAD, 0xFF])
-
-N = 8
-vector = [random.randint(0, 100) for i in range(N)]
-matrix = [[random.randint(0, 100) for i in range(N)] for j in range(N)]
-npmat = np.array(matrix).T
-npvec = np.array(vector)
-nresult = np.matmul(npmat, npvec)
-print(vector)
-print(matrix)
-print()
-print(nresult)
-
 port = SerialPort("COM59", baudrate=921600)
+NUM_RUNS = 10
 try:
-    # remember matrix should come in transposed
-    sys_start = time.time()
-    # start_time = port.write_data([2,1], [[2,4],[3,5]], 2)
-    start_time = port.write_data(vector, matrix, N)
-    result, end_time = port.read_data(N, verb = 1)
-    sys_end = time.time()
-    
-    fpga_delta = end_time - start_time
-    sys_delta = sys_end - sys_start
-    print("Received:", result, "sys: %.2f s, fpga: %.6f s" % (sys_delta, fpga_delta))
-    print("Expected:", nresult)
+    tot_sys_del = tot_fp_del = 0
+    total_corr = 0
+    for i in range(NUM_RUNS):
+        print(f"================== Performing run {i+1}... ==================")
+        corr, fdel, sysdel = rand_test_fpga(port) 
+        print("Result:","OK" if corr else "FAIL", end=" ")
+        print(f"sys: {sysdel:.2f}s, fpga: {fdel:.5f}s")
+        tot_sys_del += sysdel
+        tot_fp_del += fdel
+        if corr:
+            total_corr += 1
+        time.sleep(0.1)
+    print("{total_corr}/{NUM_RUNS} correct, total sys: {tot_sys_del:.1f}, total fp: {tot_fp_del:.3f}")
+
 except KeyboardInterrupt:
     port.close()
     exit()

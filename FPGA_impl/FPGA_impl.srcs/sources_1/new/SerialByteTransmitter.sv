@@ -24,6 +24,7 @@ module SerialByteTransmitter (
 	input [7:0] data_frame,      
     input send,                             // this should pulse on for 1 clk_uart cycle to begin transmission
     input clk_uart,                         // expects this to be 16 times the clock rate
+    input sys_reset,
 
     output reg tx,
     output reg finished_sending 
@@ -36,7 +37,13 @@ module SerialByteTransmitter (
     reg sending;
 
     always @(posedge clk_uart) begin
-        if (sending) begin
+        if (sys_reset) begin
+            tx <= 1;
+            finished_sending <= 0;
+            send_frame <= 11'b0;
+            counter <= 4'b0;
+            bit_counter <= 4'b0;
+        end else if (sending) begin
             tx <= send_frame[bit_counter];
             if (counter == 15) begin
                 bit_counter <= bit_counter + 1;

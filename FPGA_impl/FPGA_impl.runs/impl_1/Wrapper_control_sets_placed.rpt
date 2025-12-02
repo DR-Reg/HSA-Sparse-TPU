@@ -1,7 +1,7 @@
 Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
-| Date         : Mon Dec  1 02:14:47 2025
+| Date         : Tue Dec  2 02:23:21 2025
 | Host         : P2-07 running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file Wrapper_control_sets_placed.rpt
 | Design       : Wrapper
@@ -23,11 +23,11 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Total control sets                                       |   102 |
-|    Minimum number of control sets                        |   102 |
+| Total control sets                                       |   104 |
+|    Minimum number of control sets                        |   104 |
 |    Addition due to synthesis replication                 |     0 |
 |    Addition due to physical synthesis replication        |     0 |
-| Unused register locations in slices containing registers |   118 |
+| Unused register locations in slices containing registers |   120 |
 +----------------------------------------------------------+-------+
 * Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
 ** Run report_qor_suggestions for automated merging and remapping suggestions
@@ -39,11 +39,11 @@ Table of Contents
 +--------------------+-------+
 |       Fanout       | Count |
 +--------------------+-------+
-| Total control sets |   102 |
+| Total control sets |   104 |
 | >= 0 to < 4        |    11 |
 | >= 4 to < 6        |     4 |
 | >= 6 to < 8        |     0 |
-| >= 8 to < 10       |     6 |
+| >= 8 to < 10       |     8 |
 | >= 10 to < 12      |     1 |
 | >= 12 to < 14      |     2 |
 | >= 14 to < 16      |     0 |
@@ -58,123 +58,125 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |             141 |           75 |
+| No           | No                    | No                     |             141 |           68 |
 | No           | No                    | Yes                    |               0 |            0 |
-| No           | Yes                   | No                     |              86 |           37 |
-| Yes          | No                    | No                     |            2269 |          667 |
+| No           | Yes                   | No                     |              89 |           37 |
+| Yes          | No                    | No                     |            2213 |          631 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |             114 |           43 |
+| Yes          | Yes                   | No                     |             165 |           55 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
 4. Detailed Control Set Information
 -----------------------------------
 
-+--------------------+-----------------------------------------------------------+-----------------------------------------------------------+------------------+----------------+--------------+
-|    Clock Signal    |                       Enable Signal                       |                      Set/Reset Signal                     | Slice Load Count | Bel Load Count | Bels / Slice |
-+--------------------+-----------------------------------------------------------+-----------------------------------------------------------+------------------+----------------+--------------+
-|  pll/inst/clk_uart | UART_RECEIVER/UART_BYTE_RECEIVER/data_byte[4]_i_1_n_0     | UART_RECEIVER/UART_BYTE_RECEIVER/SR[0]                    |                1 |              1 |         1.00 |
-|  pll/inst/clk_uart | UART_RECEIVER/UART_BYTE_RECEIVER/data_byte[0]_i_1_n_0     | UART_RECEIVER/UART_BYTE_RECEIVER/SR[0]                    |                1 |              1 |         1.00 |
-|  pll/inst/clk_uart | UART_RECEIVER/UART_BYTE_RECEIVER/data_byte[2]_i_1_n_0     | UART_RECEIVER/UART_BYTE_RECEIVER/SR[0]                    |                1 |              1 |         1.00 |
-|  pll/inst/clk_uart | UART_RECEIVER/UART_BYTE_RECEIVER/data_byte[7]_i_1_n_0     | UART_RECEIVER/UART_BYTE_RECEIVER/SR[0]                    |                1 |              1 |         1.00 |
-|  pll/inst/clk_uart | UART_RECEIVER/UART_BYTE_RECEIVER/data_byte[6]_i_1_n_0     | UART_RECEIVER/UART_BYTE_RECEIVER/SR[0]                    |                1 |              1 |         1.00 |
-|  pll/inst/clk_uart | UART_RECEIVER/UART_BYTE_RECEIVER/data_byte[3]_i_1_n_0     | UART_RECEIVER/UART_BYTE_RECEIVER/SR[0]                    |                1 |              1 |         1.00 |
-|  pll/inst/clk_uart | UART_RECEIVER/UART_BYTE_RECEIVER/data_byte[1]_i_1_n_0     | UART_RECEIVER/UART_BYTE_RECEIVER/SR[0]                    |                1 |              1 |         1.00 |
-|  pll/inst/clk_uart | UART_RECEIVER/UART_BYTE_RECEIVER/data_byte[5]_i_1_n_0     | UART_RECEIVER/UART_BYTE_RECEIVER/SR[0]                    |                1 |              1 |         1.00 |
-|  pll/inst/clk_uart | UART_TRANSMITTER/UART_BYTE_TRANSMITTER/tx_i_1_n_0         |                                                           |                1 |              1 |         1.00 |
-|  pll/inst/clk_uart | reset_IBUF                                                |                                                           |                1 |              1 |         1.00 |
-|  pll/inst/clk100   |                                                           |                                                           |                1 |              1 |         1.00 |
-|  pll/inst/clk_uart | UART_RECEIVER/UART_BYTE_RECEIVER/bit_ctr[3]_i_2_n_0       | UART_RECEIVER/UART_BYTE_RECEIVER/SR[0]                    |                2 |              4 |         2.00 |
-|  pll/inst/clk_uart | UART_RECEIVER/UART_BYTE_RECEIVER/byte_ready               | UART_RECEIVER/UART_BYTE_RECEIVER/byte_ready_reg_0[0]      |                1 |              4 |         4.00 |
-|  pll/inst/clk_uart | UART_TRANSMITTER/UART_BYTE_TRANSMITTER/bit_counter        | UART_TRANSMITTER/UART_BYTE_TRANSMITTER/counter[3]_i_1_n_0 |                1 |              4 |         4.00 |
-|  pll/inst/clk_uart | UART_TRANSMITTER/UART_BYTE_TRANSMITTER/sending_0          | UART_TRANSMITTER/UART_BYTE_TRANSMITTER/counter[3]_i_1_n_0 |                1 |              4 |         4.00 |
-|  pll/inst/clk_uart | UART_RECEIVER/UART_BYTE_RECEIVER/E[3]                     | UART_RECEIVER/UART_BYTE_RECEIVER/SR[0]                    |                3 |              8 |         2.67 |
-|  pll/inst/clk_uart | UART_RECEIVER/UART_BYTE_RECEIVER/E[0]                     | UART_RECEIVER/UART_BYTE_RECEIVER/SR[0]                    |                3 |              8 |         2.67 |
-|  pll/inst/clk_uart | UART_RECEIVER/UART_BYTE_RECEIVER/E[2]                     | UART_RECEIVER/UART_BYTE_RECEIVER/SR[0]                    |                1 |              8 |         8.00 |
-|  pll/inst/clk_uart | UART_RECEIVER/UART_BYTE_RECEIVER/E[1]                     | UART_RECEIVER/UART_BYTE_RECEIVER/SR[0]                    |                2 |              8 |         4.00 |
-|  pll/inst/clk_uart | UART_TRANSMITTER/UART_BYTE_TRANSMITTER/E[0]               |                                                           |                2 |              8 |         4.00 |
-|  pll/inst/clk_uart | UART_TRANSMITTER/UART_BYTE_TRANSMITTER/counter[3]_i_1_n_0 |                                                           |                3 |              9 |         3.00 |
-|  pll/inst/clk_uart | UART_RECEIVER/FSM_sequential_operating_mode_reg[0]        | UART_RECEIVER/FSM_sequential_operating_mode_reg[1]        |                9 |             10 |         1.11 |
-|  pll/inst/clk_uart |                                                           |                                                           |                7 |             12 |         1.71 |
-|  pll/inst/clk_uart | UART_RECEIVER/FSM_sequential_operating_mode_reg[0]        |                                                           |               10 |             13 |         1.30 |
-|  pll/inst/clk_uart | UART_RECEIVER/data_frame_reg[16]_16[0]                    |                                                           |                4 |             16 |         4.00 |
-|  pll/inst/clk_uart | UART_RECEIVER/data_frame_reg[16]_18[0]                    |                                                           |                3 |             16 |         5.33 |
-|  pll/inst/clk_uart | UART_RECEIVER/data_frame_reg[16]_20[0]                    |                                                           |                4 |             16 |         4.00 |
-|  pll/inst/clk_uart | UART_RECEIVER/data_frame_reg[16]_11[0]                    |                                                           |                3 |             16 |         5.33 |
-|  pll/inst/clk_uart | UART_RECEIVER/data_frame_reg[16]_2[0]                     |                                                           |                3 |             16 |         5.33 |
-|  pll/inst/clk_uart | UART_RECEIVER/data_frame_reg[16]_4[0]                     |                                                           |                3 |             16 |         5.33 |
-|  pll/inst/clk_uart | UART_RECEIVER/data_frame_reg[17]_8[0]                     |                                                           |                5 |             16 |         3.20 |
-|  pll/inst/clk_uart | UART_RECEIVER/data_frame_reg[18]_0[0]                     |                                                           |                3 |             16 |         5.33 |
-|  pll/inst/clk_uart | UART_RECEIVER/data_frame_reg[18]_1[0]                     |                                                           |                5 |             16 |         3.20 |
-|  pll/inst/clk_uart | UART_RECEIVER/data_frame_reg[18]_3[0]                     |                                                           |                4 |             16 |         4.00 |
-|  pll/inst/clk_uart | UART_RECEIVER/data_frame_reg[16]_3[0]                     |                                                           |                4 |             16 |         4.00 |
-|  pll/inst/clk_uart | UART_RECEIVER/data_frame_reg[16]_13[0]                    |                                                           |                2 |             16 |         8.00 |
-|  pll/inst/clk_uart | UART_RECEIVER/data_frame_reg[16]_25[0]                    |                                                           |                3 |             16 |         5.33 |
-|  pll/inst/clk_uart | UART_RECEIVER/data_frame_reg[16]_14[0]                    |                                                           |                4 |             16 |         4.00 |
-|  pll/inst/clk_uart | UART_RECEIVER/data_frame_reg[16]_23[0]                    |                                                           |                3 |             16 |         5.33 |
-|  pll/inst/clk_uart | UART_RECEIVER/data_frame_reg[16]_21[0]                    |                                                           |                5 |             16 |         3.20 |
-|  pll/inst/clk_uart | UART_RECEIVER/data_frame_reg[16]_6[0]                     |                                                           |                4 |             16 |         4.00 |
-|  pll/inst/clk_uart | UART_RECEIVER/data_frame_reg[16]_9[0]                     |                                                           |                2 |             16 |         8.00 |
-|  pll/inst/clk_uart | UART_RECEIVER/data_frame_reg[16]_12[0]                    |                                                           |                3 |             16 |         5.33 |
-|  pll/inst/clk_uart | UART_RECEIVER/data_frame_reg[16]_7[0]                     |                                                           |                3 |             16 |         5.33 |
-|  pll/inst/clk_uart | UART_RECEIVER/data_frame_reg[17]_12[0]                    |                                                           |                4 |             16 |         4.00 |
-|  pll/inst/clk_uart | UART_RECEIVER/data_frame_reg[16]_15[0]                    |                                                           |                5 |             16 |         3.20 |
-|  pll/inst/clk_uart | UART_RECEIVER/data_frame_reg[17]_14[0]                    |                                                           |                2 |             16 |         8.00 |
-|  pll/inst/clk_uart | UART_RECEIVER/data_frame_reg[17]_7[0]                     |                                                           |                2 |             16 |         8.00 |
-|  pll/inst/clk_uart | UART_RECEIVER/data_frame_reg[17]_10[0]                    |                                                           |                4 |             16 |         4.00 |
-|  pll/inst/clk_uart | UART_RECEIVER/data_frame_reg[16]_22[0]                    |                                                           |                5 |             16 |         3.20 |
-|  pll/inst/clk_uart | UART_RECEIVER/data_frame_reg[17]_11[0]                    |                                                           |                5 |             16 |         3.20 |
-|  pll/inst/clk_uart | UART_RECEIVER/data_frame_reg[16]_19[0]                    |                                                           |                4 |             16 |         4.00 |
-|  pll/inst/clk_uart | UART_RECEIVER/data_frame_reg[16]_24[0]                    |                                                           |                3 |             16 |         5.33 |
-|  pll/inst/clk_uart | UART_RECEIVER/data_frame_reg[16]_8[0]                     |                                                           |                6 |             16 |         2.67 |
-|  pll/inst/clk_uart | UART_RECEIVER/data_frame_reg[17]_9[0]                     |                                                           |                7 |             16 |         2.29 |
-|  pll/inst/clk_uart | UART_RECEIVER/data_frame_reg[18]_2[0]                     |                                                           |                7 |             16 |         2.29 |
-|  pll/inst/clk_uart | UART_RECEIVER/data_frame_reg[16]_10[0]                    |                                                           |                3 |             16 |         5.33 |
-|  pll/inst/clk_uart | UART_RECEIVER/data_frame_reg[16]_5[0]                     |                                                           |                7 |             16 |         2.29 |
-|  pll/inst/clk_uart | UART_RECEIVER/data_frame_reg[19]_15[0]                    |                                                           |                3 |             16 |         5.33 |
-|  pll/inst/clk_uart | UART_RECEIVER/data_frame_reg[18]_6[0]                     |                                                           |                5 |             16 |         3.20 |
-|  pll/inst/clk_uart | UART_RECEIVER/data_frame_reg[19]_10[0]                    |                                                           |                4 |             16 |         4.00 |
-|  pll/inst/clk_uart | UART_RECEIVER/data_frame_reg[19]_4[0]                     |                                                           |                4 |             16 |         4.00 |
-|  pll/inst/clk_uart | UART_RECEIVER/data_frame_reg[19]_5[0]                     |                                                           |                5 |             16 |         3.20 |
-|  pll/inst/clk_uart | UART_RECEIVER/data_frame_reg[19]_24[0]                    |                                                           |                2 |             16 |         8.00 |
-|  pll/inst/clk_uart | UART_RECEIVER/data_frame_reg[19]_20[0]                    |                                                           |                3 |             16 |         5.33 |
-|  pll/inst/clk_uart | UART_RECEIVER/data_frame_reg[19]_3[0]                     |                                                           |                3 |             16 |         5.33 |
-|  pll/inst/clk_uart | UART_RECEIVER/data_frame_reg[19]_18[0]                    |                                                           |                5 |             16 |         3.20 |
-|  pll/inst/clk_uart | UART_RECEIVER/data_frame_reg[19]_7[0]                     |                                                           |                5 |             16 |         3.20 |
-|  pll/inst/clk_uart | UART_RECEIVER/data_frame_reg[18]_4[0]                     |                                                           |                4 |             16 |         4.00 |
-|  pll/inst/clk_uart | UART_RECEIVER/data_frame_reg[19]_8[0]                     |                                                           |                2 |             16 |         8.00 |
-|  pll/inst/clk_uart | UART_RECEIVER/data_frame_reg[19]_9[0]                     |                                                           |                6 |             16 |         2.67 |
-|  pll/inst/clk_uart | UART_RECEIVER/data_frame_reg[19]_14[0]                    |                                                           |                3 |             16 |         5.33 |
-|  pll/inst/clk_uart | UART_RECEIVER/data_frame_reg[19]_6[0]                     |                                                           |                3 |             16 |         5.33 |
-|  pll/inst/clk_uart | UART_RECEIVER/data_frame_reg[19]_11[0]                    |                                                           |                7 |             16 |         2.29 |
-|  pll/inst/clk_uart | UART_RECEIVER/data_frame_reg[19]_16[0]                    |                                                           |                2 |             16 |         8.00 |
-|  pll/inst/clk_uart | UART_RECEIVER/data_frame_reg[19]_17[0]                    |                                                           |                3 |             16 |         5.33 |
-|  pll/inst/clk_uart | UART_RECEIVER/data_frame_reg[19]_2[0]                     |                                                           |                3 |             16 |         5.33 |
-|  pll/inst/clk_uart | UART_RECEIVER/data_frame_reg[19]_19[0]                    |                                                           |                7 |             16 |         2.29 |
-|  pll/inst/clk_uart | UART_RECEIVER/data_frame_reg[19]_23[0]                    |                                                           |                3 |             16 |         5.33 |
-|  pll/inst/clk_uart | UART_RECEIVER/data_frame_reg[19]_1[0]                     |                                                           |                7 |             16 |         2.29 |
-|  pll/inst/clk_uart | UART_RECEIVER/data_frame_reg[19]_13[0]                    |                                                           |                3 |             16 |         5.33 |
-|  pll/inst/clk_uart | UART_RECEIVER/data_frame_reg[18]_5[0]                     |                                                           |                3 |             16 |         5.33 |
-|  pll/inst/clk_uart | UART_RECEIVER/data_frame_reg[19]_22[0]                    |                                                           |                2 |             16 |         8.00 |
-|  pll/inst/clk_uart | UART_RECEIVER/data_frame_reg[19]_12[0]                    |                                                           |                4 |             16 |         4.00 |
-|  pll/inst/clk_uart | UART_RECEIVER/data_frame_reg[16]_17[0]                    |                                                           |                4 |             16 |         4.00 |
-|  pll/inst/clk_uart | UART_RECEIVER/FSM_sequential_operating_mode_reg[0]_0      | UART_RECEIVER/UART_BYTE_RECEIVER/SR[0]                    |                4 |             16 |         4.00 |
-|  pll/inst/clk_uart | UART_RECEIVER/data_frame_reg[19]_21[0]                    |                                                           |                4 |             16 |         4.00 |
-|  pll/inst/clk_uart | UART_RECEIVER/data_frame_reg[17]_13[0]                    |                                                           |                4 |             16 |         4.00 |
-|  pll/inst/clk_uart | UART_RECEIVER/data_frame_reg[17]_6[0]                     |                                                           |                4 |             16 |         4.00 |
-|  pll/inst/clk_uart | UART_RECEIVER/p_0_in                                      |                                                           |                3 |             24 |         8.00 |
-|  pll/inst/clk_uart | transmission_ctr[31]_i_1_n_0                              | UART_RECEIVER/UART_BYTE_RECEIVER/SR[0]                    |                8 |             32 |         4.00 |
-|  pll/inst/clk_uart |                                                           | UART_RECEIVER/UART_BYTE_RECEIVER/SR[0]                    |               37 |             86 |         2.32 |
-|  vpu_hsa/p_0_out   |                                                           |                                                           |               67 |            128 |         1.91 |
-| ~pll/inst/clk100   | vpu_hsa/row[1].col[0].mac/E[0]                            |                                                           |               45 |            128 |         2.84 |
-| ~pll/inst/clk100   | vpu_hsa/CEB2                                              |                                                           |               36 |            128 |         3.56 |
-| ~pll/inst/clk100   | vpu_hsa/row[1].col[4].mac/E[0]                            |                                                           |               42 |            128 |         3.05 |
-| ~pll/inst/clk100   | vpu_hsa/row[1].col[6].mac/E[0]                            |                                                           |               37 |            128 |         3.46 |
-| ~pll/inst/clk100   | vpu_hsa/weight[15]_i_1__0__0_n_0                          |                                                           |               40 |            128 |         3.20 |
-| ~pll/inst/clk100   | vpu_hsa/weight[15]_i_1__2__0_n_0                          |                                                           |               41 |            128 |         3.12 |
-| ~pll/inst/clk100   | vpu_hsa/weight[15]_i_1__2_n_0                             |                                                           |               36 |            128 |         3.56 |
-| ~pll/inst/clk100   | vpu_hsa/weight[15]_i_1__3_n_0                             |                                                           |               39 |            128 |         3.28 |
-|  pll/inst/clk100   | act_col_ix_tristate_oe[2]_i_1_n_0                         |                                                           |               83 |            189 |         2.28 |
-+--------------------+-----------------------------------------------------------+-----------------------------------------------------------+------------------+----------------+--------------+
++--------------------+-----------------------------------------------------------+--------------------------------------------------------------+------------------+----------------+--------------+
+|    Clock Signal    |                       Enable Signal                       |                       Set/Reset Signal                       | Slice Load Count | Bel Load Count | Bels / Slice |
++--------------------+-----------------------------------------------------------+--------------------------------------------------------------+------------------+----------------+--------------+
+|  pll/inst/clk_uart | UART_TRANSMITTER/UART_BYTE_TRANSMITTER/tx_i_1_n_0         |                                                              |                1 |              1 |         1.00 |
+|  pll/inst/clk_uart | UART_TRANSMITTER/p_0_in[0]                                |                                                              |                1 |              1 |         1.00 |
+|  pll/inst/clk_uart | UART_RECEIVER/UART_BYTE_RECEIVER/data_byte[4]_i_1_n_0     | UART_RECEIVER/UART_BYTE_RECEIVER/SR[0]                       |                1 |              1 |         1.00 |
+|  pll/inst/clk_uart | UART_RECEIVER/UART_BYTE_RECEIVER/data_byte[1]_i_1_n_0     | UART_RECEIVER/UART_BYTE_RECEIVER/SR[0]                       |                1 |              1 |         1.00 |
+|  pll/inst/clk_uart | UART_RECEIVER/UART_BYTE_RECEIVER/data_byte[2]_i_1_n_0     | UART_RECEIVER/UART_BYTE_RECEIVER/SR[0]                       |                1 |              1 |         1.00 |
+|  pll/inst/clk_uart | UART_RECEIVER/UART_BYTE_RECEIVER/data_byte[3]_i_1_n_0     | UART_RECEIVER/UART_BYTE_RECEIVER/SR[0]                       |                1 |              1 |         1.00 |
+|  pll/inst/clk_uart | UART_RECEIVER/UART_BYTE_RECEIVER/data_byte[5]_i_1_n_0     | UART_RECEIVER/UART_BYTE_RECEIVER/SR[0]                       |                1 |              1 |         1.00 |
+|  pll/inst/clk_uart | UART_RECEIVER/UART_BYTE_RECEIVER/data_byte[0]_i_1_n_0     | UART_RECEIVER/UART_BYTE_RECEIVER/SR[0]                       |                1 |              1 |         1.00 |
+|  pll/inst/clk_uart | UART_RECEIVER/UART_BYTE_RECEIVER/data_byte[6]_i_1_n_0     | UART_RECEIVER/UART_BYTE_RECEIVER/SR[0]                       |                1 |              1 |         1.00 |
+|  pll/inst/clk_uart | UART_RECEIVER/UART_BYTE_RECEIVER/data_byte[7]_i_1_n_0     | UART_RECEIVER/UART_BYTE_RECEIVER/SR[0]                       |                1 |              1 |         1.00 |
+|  pll/inst/clk100   |                                                           |                                                              |                1 |              1 |         1.00 |
+|  pll/inst/clk_uart | UART_TRANSMITTER/UART_BYTE_TRANSMITTER/bit_counter        | UART_TRANSMITTER/UART_BYTE_TRANSMITTER/counter[3]_i_1_n_0    |                1 |              4 |         4.00 |
+|  pll/inst/clk_uart | UART_TRANSMITTER/UART_BYTE_TRANSMITTER/sending_reg_n_0    | UART_TRANSMITTER/UART_BYTE_TRANSMITTER/counter[3]_i_1_n_0    |                1 |              4 |         4.00 |
+|  pll/inst/clk_uart | UART_RECEIVER/UART_BYTE_RECEIVER/bit_ctr[3]_i_1_n_0       | UART_RECEIVER/UART_BYTE_RECEIVER/SR[0]                       |                1 |              4 |         4.00 |
+|  pll/inst/clk_uart | UART_RECEIVER/UART_BYTE_RECEIVER/byte_ready               | UART_RECEIVER/UART_BYTE_RECEIVER/byte_ready_reg_0[0]         |                2 |              4 |         2.00 |
+|  pll/inst/clk_uart | UART_RECEIVER/UART_BYTE_RECEIVER/E[1]                     | UART_RECEIVER/UART_BYTE_RECEIVER/SR[0]                       |                1 |              8 |         8.00 |
+|  pll/inst/clk_uart | UART_RECEIVER/frame_ready_reg_1[1]                        | UART_RECEIVER/UART_BYTE_RECEIVER/SR[0]                       |                2 |              8 |         4.00 |
+|  pll/inst/clk_uart | UART_RECEIVER/frame_ready_reg_1[0]                        | UART_RECEIVER/UART_BYTE_RECEIVER/SR[0]                       |                3 |              8 |         2.67 |
+|  pll/inst/clk_uart | UART_TRANSMITTER/UART_BYTE_TRANSMITTER/counter[3]_i_1_n_0 | UART_TRANSMITTER/UART_BYTE_TRANSMITTER/send_frame[8]_i_1_n_0 |                3 |              8 |         2.67 |
+|  pll/inst/clk_uart | UART_TRANSMITTER/UART_BYTE_TRANSMITTER/E[0]               | UART_RECEIVER/UART_BYTE_RECEIVER/SR[0]                       |                3 |              8 |         2.67 |
+|  pll/inst/clk_uart | UART_RECEIVER/UART_BYTE_RECEIVER/E[3]                     | UART_RECEIVER/UART_BYTE_RECEIVER/SR[0]                       |                2 |              8 |         4.00 |
+|  pll/inst/clk_uart | UART_RECEIVER/UART_BYTE_RECEIVER/E[0]                     | UART_RECEIVER/UART_BYTE_RECEIVER/SR[0]                       |                1 |              8 |         8.00 |
+|  pll/inst/clk_uart | UART_RECEIVER/UART_BYTE_RECEIVER/E[2]                     | UART_RECEIVER/UART_BYTE_RECEIVER/SR[0]                       |                2 |              8 |         4.00 |
+|  pll/inst/clk_uart | UART_RECEIVER/frame_ready_reg_0                           |                                                              |                5 |             10 |         2.00 |
+|  pll/inst/clk_uart |                                                           |                                                              |                7 |             12 |         1.71 |
+|  pll/inst/clk_uart | UART_RECEIVER/frame_ready_reg_0                           | uart_data_frame[18]_i_1_n_0                                  |               11 |             13 |         1.18 |
+|  pll/inst/clk_uart | UART_RECEIVER/data_frame_reg[19]_14[0]                    |                                                              |                5 |             16 |         3.20 |
+|  pll/inst/clk_uart | UART_RECEIVER/data_frame_reg[19]_13[0]                    |                                                              |                3 |             16 |         5.33 |
+|  pll/inst/clk_uart | UART_RECEIVER/data_frame_reg[19]_19[0]                    |                                                              |                6 |             16 |         2.67 |
+|  pll/inst/clk_uart | UART_RECEIVER/data_frame_reg[19]_2[0]                     |                                                              |                5 |             16 |         3.20 |
+|  pll/inst/clk_uart | UART_RECEIVER/data_frame_reg[19]_20[0]                    |                                                              |                3 |             16 |         5.33 |
+|  pll/inst/clk_uart | UART_RECEIVER/data_frame_reg[19]_5[0]                     |                                                              |                3 |             16 |         5.33 |
+|  pll/inst/clk_uart | UART_RECEIVER/data_frame_reg[19]_3[0]                     |                                                              |                3 |             16 |         5.33 |
+|  pll/inst/clk_uart | UART_RECEIVER/data_frame_reg[19]_4[0]                     |                                                              |                7 |             16 |         2.29 |
+|  pll/inst/clk_uart | UART_RECEIVER/data_frame_reg[19]_11[0]                    |                                                              |                5 |             16 |         3.20 |
+|  pll/inst/clk_uart | UART_RECEIVER/data_frame_reg[19]_6[0]                     |                                                              |                2 |             16 |         8.00 |
+|  pll/inst/clk_uart | UART_RECEIVER/data_frame_reg[16]_1[0]                     |                                                              |                2 |             16 |         8.00 |
+|  pll/inst/clk_uart | UART_RECEIVER/data_frame_reg[19]_7[0]                     |                                                              |                3 |             16 |         5.33 |
+|  pll/inst/clk_uart | UART_RECEIVER/data_frame_reg[19]_8[0]                     |                                                              |                6 |             16 |         2.67 |
+|  pll/inst/clk_uart | UART_RECEIVER/data_frame_reg[19]_17[0]                    |                                                              |                3 |             16 |         5.33 |
+|  pll/inst/clk_uart | UART_RECEIVER/data_frame_reg[19]_9[0]                     |                                                              |                5 |             16 |         3.20 |
+|  pll/inst/clk_uart | UART_RECEIVER/data_frame_reg[25]_2[0]                     |                                                              |                3 |             16 |         5.33 |
+|  pll/inst/clk_uart | UART_RECEIVER/data_frame_reg[25]_7[0]                     |                                                              |                3 |             16 |         5.33 |
+|  pll/inst/clk_uart | UART_RECEIVER/data_frame_reg[25]_9[0]                     |                                                              |                3 |             16 |         5.33 |
+|  pll/inst/clk_uart | UART_RECEIVER/internal_reset_reg_1[0]                     |                                                              |                3 |             16 |         5.33 |
+|  pll/inst/clk_uart | UART_RECEIVER/internal_reset_reg_5[0]                     |                                                              |                3 |             16 |         5.33 |
+|  pll/inst/clk_uart | UART_RECEIVER/data_frame_reg[24]_20[0]                    |                                                              |                2 |             16 |         8.00 |
+|  pll/inst/clk_uart | UART_RECEIVER/data_frame_reg[24]_18[0]                    |                                                              |                4 |             16 |         4.00 |
+|  pll/inst/clk_uart | UART_RECEIVER/data_frame_reg[25]_3[0]                     |                                                              |                3 |             16 |         5.33 |
+|  pll/inst/clk_uart | UART_RECEIVER/internal_reset_reg_2[0]                     |                                                              |                2 |             16 |         8.00 |
+|  pll/inst/clk_uart | UART_RECEIVER/data_frame_reg[25]_8[0]                     |                                                              |                6 |             16 |         2.67 |
+|  pll/inst/clk_uart | UART_RECEIVER/data_frame_reg[24]_4[0]                     |                                                              |                6 |             16 |         2.67 |
+|  pll/inst/clk_uart | UART_RECEIVER/data_frame_reg[19]_18[0]                    |                                                              |                4 |             16 |         4.00 |
+|  pll/inst/clk_uart | UART_RECEIVER/data_frame_reg[24]_9[0]                     |                                                              |                4 |             16 |         4.00 |
+|  pll/inst/clk_uart | UART_RECEIVER/data_frame_reg[25]_0[0]                     |                                                              |                3 |             16 |         5.33 |
+|  pll/inst/clk_uart | UART_RECEIVER/data_frame_reg[24]_19[0]                    |                                                              |                3 |             16 |         5.33 |
+|  pll/inst/clk_uart | UART_RECEIVER/internal_reset_reg_0[0]                     |                                                              |                4 |             16 |         4.00 |
+|  pll/inst/clk_uart | UART_RECEIVER/data_frame_reg[25]_4[0]                     |                                                              |                4 |             16 |         4.00 |
+|  pll/inst/clk_uart | UART_RECEIVER/data_frame_reg[24]_2[0]                     |                                                              |                3 |             16 |         5.33 |
+|  pll/inst/clk_uart | UART_RECEIVER/internal_reset_reg_3[0]                     |                                                              |                4 |             16 |         4.00 |
+|  pll/inst/clk_uart | UART_RECEIVER/data_frame_reg[24]_21[0]                    |                                                              |                3 |             16 |         5.33 |
+|  pll/inst/clk_uart | UART_RECEIVER/data_frame_reg[24]_8[0]                     |                                                              |                5 |             16 |         3.20 |
+|  pll/inst/clk_uart | UART_RECEIVER/data_frame_reg[25]_1[0]                     |                                                              |                4 |             16 |         4.00 |
+|  pll/inst/clk_uart | UART_RECEIVER/internal_reset_reg[0]                       |                                                              |                5 |             16 |         3.20 |
+|  pll/inst/clk_uart | UART_RECEIVER/data_frame_reg[24]_7[0]                     |                                                              |                6 |             16 |         2.67 |
+|  pll/inst/clk_uart | UART_RECEIVER/data_frame_reg[25]_6[0]                     |                                                              |                5 |             16 |         3.20 |
+|  pll/inst/clk_uart | UART_RECEIVER/data_frame_reg[25]_5[0]                     |                                                              |                4 |             16 |         4.00 |
+|  pll/inst/clk_uart | UART_RECEIVER/data_frame_reg[24]_5[0]                     |                                                              |                5 |             16 |         3.20 |
+|  pll/inst/clk_uart | UART_RECEIVER/internal_reset_reg_4[0]                     |                                                              |                5 |             16 |         3.20 |
+|  pll/inst/clk_uart | UART_RECEIVER/data_frame_reg[24]_3[0]                     |                                                              |                3 |             16 |         5.33 |
+|  pll/inst/clk_uart | UART_RECEIVER/data_frame_reg[19]_15[0]                    |                                                              |                4 |             16 |         4.00 |
+|  pll/inst/clk_uart | UART_RECEIVER/E[0]                                        |                                                              |                3 |             16 |         5.33 |
+|  pll/inst/clk_uart | UART_RECEIVER/data_frame_reg[24]_0[0]                     |                                                              |                3 |             16 |         5.33 |
+|  pll/inst/clk_uart | UART_RECEIVER/data_frame_reg[24]_10[0]                    |                                                              |                2 |             16 |         8.00 |
+|  pll/inst/clk_uart | UART_RECEIVER/data_frame_reg[19]_1[0]                     |                                                              |                3 |             16 |         5.33 |
+|  pll/inst/clk_uart | UART_RECEIVER/data_frame_reg[24]_11[0]                    |                                                              |                3 |             16 |         5.33 |
+|  pll/inst/clk_uart | UART_RECEIVER/data_frame_reg[24]_13[0]                    |                                                              |                3 |             16 |         5.33 |
+|  pll/inst/clk_uart | UART_RECEIVER/data_frame_reg[24]_14[0]                    |                                                              |                3 |             16 |         5.33 |
+|  pll/inst/clk_uart | UART_RECEIVER/data_frame_reg[19]_16[0]                    |                                                              |                5 |             16 |         3.20 |
+|  pll/inst/clk_uart | UART_RECEIVER/data_frame_reg[24]_15[0]                    |                                                              |                6 |             16 |         2.67 |
+|  pll/inst/clk_uart | UART_RECEIVER/data_frame_reg[24]_12[0]                    |                                                              |                3 |             16 |         5.33 |
+|  pll/inst/clk_uart | UART_RECEIVER/data_frame_reg[24]_1[0]                     |                                                              |                4 |             16 |         4.00 |
+|  pll/inst/clk_uart | UART_RECEIVER/data_frame_reg[24]_16[0]                    |                                                              |                2 |             16 |         8.00 |
+|  pll/inst/clk_uart | UART_RECEIVER/data_frame_reg[24]_17[0]                    |                                                              |                5 |             16 |         3.20 |
+|  pll/inst/clk_uart | UART_RECEIVER/data_frame_reg[19]_12[0]                    |                                                              |                4 |             16 |         4.00 |
+|  pll/inst/clk_uart | UART_RECEIVER/data_frame_reg[16]_0[0]                     |                                                              |                3 |             16 |         5.33 |
+|  pll/inst/clk_uart | UART_RECEIVER/data_frame_reg[16]_2[0]                     |                                                              |                5 |             16 |         3.20 |
+|  pll/inst/clk_uart | UART_RECEIVER/data_frame_reg[24]_6[0]                     |                                                              |                5 |             16 |         3.20 |
+|  pll/inst/clk_uart | UART_RECEIVER/data_frame_reg[16]_3[0]                     |                                                              |                6 |             16 |         2.67 |
+|  pll/inst/clk_uart | UART_RECEIVER/data_frame_reg[19]_10[0]                    |                                                              |                4 |             16 |         4.00 |
+|  pll/inst/clk_uart | UART_RECEIVER/p_0_in                                      |                                                              |                3 |             24 |         8.00 |
+|  pll/inst/clk_uart | transmission_ctr[31]_i_1_n_0                              | UART_RECEIVER/UART_BYTE_RECEIVER/SR[0]                       |                6 |             32 |         5.33 |
+|  pll/inst/clk100   | act_col_ix_tristate_oe[2]_i_1_n_0                         | UART_RECEIVER/UART_BYTE_RECEIVER/SR[0]                       |                8 |             32 |         4.00 |
+|  pll/inst/clk_uart |                                                           | UART_RECEIVER/UART_BYTE_RECEIVER/SR[0]                       |               37 |             89 |         2.41 |
+|  vpu_hsa/p_0_out   |                                                           |                                                              |               60 |            128 |         2.13 |
+| ~pll/inst/clk100   | vpu_hsa/row[1].col[4].mac/E[0]                            |                                                              |               34 |            128 |         3.76 |
+| ~pll/inst/clk100   | vpu_hsa/row[1].col[0].mac/E[0]                            |                                                              |               41 |            128 |         3.12 |
+| ~pll/inst/clk100   | vpu_hsa/CEB2                                              |                                                              |               38 |            128 |         3.37 |
+| ~pll/inst/clk100   | vpu_hsa/weight[15]_i_1__2_n_0                             |                                                              |               35 |            128 |         3.66 |
+| ~pll/inst/clk100   | vpu_hsa/weight[15]_i_1__2__0_n_0                          |                                                              |               50 |            128 |         2.56 |
+| ~pll/inst/clk100   | vpu_hsa/weight[15]_i_1__0__0_n_0                          |                                                              |               34 |            128 |         3.76 |
+| ~pll/inst/clk100   | vpu_hsa/weight[15]_i_1__3_n_0                             |                                                              |               37 |            128 |         3.46 |
+| ~pll/inst/clk100   | vpu_hsa/row[1].col[6].mac/E[0]                            |                                                              |               32 |            128 |         4.00 |
+|  pll/inst/clk100   | act_col_ix_tristate_oe[2]_i_1_n_0                         |                                                              |               74 |            153 |         2.07 |
++--------------------+-----------------------------------------------------------+--------------------------------------------------------------+------------------+----------------+--------------+
 
 

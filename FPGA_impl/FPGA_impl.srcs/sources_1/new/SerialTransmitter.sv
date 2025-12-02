@@ -24,6 +24,7 @@ module SerialTransmitter #(parameter FRAME_WIDTH = 8) (
 	input [FRAME_WIDTH - 1:0] data_frame,      
     input send,                             // this should pulse on for 1 clk_uart cycle to begin transmission
     input clk_uart,                         // expects this to be 16 times the clock rate
+    input sys_reset,
 
     output tx,
     output reg ready
@@ -39,12 +40,18 @@ module SerialTransmitter #(parameter FRAME_WIDTH = 8) (
         .data_frame(current_byte),
         .send(send_signal),
         .clk_uart(clk_uart),
+        .sys_reset(sys_reset),
         .tx(tx),
         .finished_sending(bt_finished)
     );
 
     always @(posedge clk_uart) begin
-        if (sending) begin
+        if (sys_reset) begin
+            ready <= 0;
+            sending <= 0;
+            send_signal <= 0;
+            current_byte <= 8'b0;
+        end else if (sending) begin
             send_signal <= 0;
             if (bt_finished) begin
                 byte_counter <= byte_counter + 1;

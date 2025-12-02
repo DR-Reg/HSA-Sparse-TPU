@@ -32,6 +32,11 @@ module Wrapper(
 	localparam SIZE = 8;
 
     wire sys_reset = ~reset;
+    reg internal_reset;
+
+    initial begin
+        internal_reset <= 0;
+    end
 
     // ila_0 debug_ila (
     //     .clk(clk_100mhz),
@@ -134,8 +139,9 @@ module Wrapper(
 
     reg compute_done;       // flag for switching back to slow clock
 	always @(posedge clk100) begin
-        if (sys_reset) begin
+        if (sys_reset || internal_reset) begin
             compute_done <= 0;
+            cycle_ctr <= 0;
         /* 2'b10 = Computing, the only case at system clock */
         end else if (operating_mode == 2'b10) begin
             wEn = cycle_ctr < SIZE;                             // only write enable for first N cycles
@@ -190,9 +196,8 @@ module Wrapper(
     reg [(SIZE*SIZE)-1:0] weights_filled;
     reg [SIZE-1:0] acts_filled;
     reg send_aligner;
-    reg [31:0] recent_rx_data_frame, ms1_data_frame;
     always @(posedge clk_uart) begin
-        if (sys_reset) begin
+        if (sys_reset || internal_reset) begin
             misal_fsm <= 0;
             recv_drop_byte <= 0;
             got_magic <= 0;
@@ -203,10 +208,10 @@ module Wrapper(
             uart_send_signal <= 0;
             result_index     <= 0; 
             LED[15:0] <= 0;
+            internal_reset <= 0;        // internal reset max 1 cycle
         end else if (operating_mode == 2'b00) begin
             send_aligner <= 1;  // want this to start at 1
             if (frame_ready) begin
-                recent_rx_data_frame <= rx_data_frame;      // for debugging
                 case (misal_fsm)
                     1'b0 : begin
                         // signal we are in idle with leds
@@ -224,13 +229,13 @@ module Wrapper(
                         end
                     end
                     1'b1 : begin
-                        ms1_data_frame <= rx_data_frame;
                         LED[15:0] <= 16'h0000;
                         if (rx_data_frame == 32'hDEADBEEF) begin
                             // verified, send OK
                             uart_data_frame <= 32'h0C0C0C0C;
                             uart_send_signal <= 1;  // pulsed back down to 0 when in op mode 01
                             operating_mode <= 2'b01;
+                            LED[15:0] <= 16'h0001;
                             got_magic <= 0;         // must be 0 for opmode 01
                         end else begin
                             // something bad happened, go back to alignment state
@@ -255,6 +260,7 @@ module Wrapper(
                     if (rx_data_frame == 32'hDA221D06) begin
                         // start reading into memory
                         got_magic <= 1;
+                        LED[15:0] <= 16'h0003;
                     end
                 // Once we got magic, wait for first non-1 msb.
                 end else if (rx_data_frame[31] == 0) begin
@@ -272,6 +278,7 @@ module Wrapper(
                         acts_sram[rx_data_frame[22:16]] <= rx_data_frame[BIT_WIDTH-1:0];
                         // record that we have filled this one:
                         acts_filled[rx_data_frame[22:16]] <= 1;
+                        LED[7:0] <= acts_filled;
                     end
                     // Have we filled all of them?
                     if (&acts_filled & &weights_filled) begin
@@ -280,6 +287,7 @@ module Wrapper(
                         uart_send_signal <= 1;
                         // move to op mode
                         operating_mode <= 2'b10;
+                        LED[15:0] <= 16'h0007;
                     end
                 end
             end
@@ -290,7 +298,12 @@ module Wrapper(
              **/
             if (frame_ready && rx_data_frame == 32'h0C0C0C0C) begin
                 send_aligner <= 0;      // host is aligned
-            end 
+            end else if (frame_ready && rx_data_frame == 32'h1C1C1C1C) begin
+                // reset all signals
+                internal_reset <= 1;
+                // go back to state 0
+                operating_mode <= 2'b00;
+            end
             if (transmission_ctr == 2000) begin
                 if (send_aligner) begin
                     uart_data_frame <= 32'hDEADBEEF;
@@ -303,7 +316,7 @@ module Wrapper(
                     if (BIT_WIDTH < 16) begin
                         uart_data_frame[15:BIT_WIDTH]  <= 0;            // left-pad data with 0
                     end
-                        uart_data_frame[BIT_WIDTH-1:0] <= result[result_index]; // data
+                    uart_data_frame[BIT_WIDTH-1:0] <= result[result_index]; // data
                     // uart_data_frame <= 32'h00DA221D;
                 end
                 uart_send_signal <= 1;
@@ -321,6 +334,7 @@ module Wrapper(
             .data_frame(uart_data_frame),
             .send(uart_send_signal),
             .clk_uart(clk_uart),
+            .sys_reset(sys_reset || internal_reset),
             
             .tx(UART_RXD_OUT)
     );
@@ -330,7 +344,7 @@ module Wrapper(
     SerialReceiver #(.FRAME_WIDTH(32)) UART_RECEIVER(
             .clk_uart(clk_uart),
             .rx(UART_TXD_IN),
-            .sys_reset(sys_reset),
+            .sys_reset(sys_reset || internal_reset),
             .drop_byte(recv_drop_byte),
             
             .frame_ready(frame_ready),

@@ -1,7 +1,31 @@
 import serial
 import time
+import numpy as np
+import random
 
-# TODO: variable bytesize
+def rand_test_fpga(port, N = 8):
+    vector = [random.randint(0, 100) for i in range(N)]
+    matrix = [[random.randint(0, 100) for i in range(N)] for j in range(N)]
+
+    # remember matrix should come in transposed
+    npmat = np.array(matrix).T
+    npvec = np.array(vector)
+    nresult = np.matmul(npmat, npvec) # expected result
+    
+    sys_start = time.time()
+    start_time = port.write_data(vector, matrix, N)
+    result, end_time = port.read_data(N)
+    sys_end = time.time()
+    
+    fpga_delta = end_time - start_time
+    sys_delta = sys_end - sys_start
+
+    recv_res = np.array(result)
+
+    correct = np.array_equal(recv_res, nresult)
+
+    return (correct, fpga_delta, sys_delta)
+
 class SerialPort:
     def __init__(self, port, bytesize=serial.EIGHTBITS, baudrate=9600, timeout=1):
         self.ser = serial.Serial(
@@ -112,12 +136,13 @@ class SerialPort:
         # get slice of bits using verilog indexing
         return (n & ((1<<(hi+1))-1)&~((1<<lo)-1))>>lo
 
-    def write_data(self, acts, weights, SIZE):
+    def write_data(self, acts, weights, SIZE, verb=0):
         print("Preparing to write data, beginning alignment procedure")
         while True:
             msg = b'\xde\xad\xbe\xef'
             self.ser.write(msg[::-1])   # little end
-            print("Sent", msg.hex())
+            if verb:
+                print("Sent", msg.hex())
             time.sleep(0.01)            # a bit of pause so no bottleneck send path
             if self.ser.in_waiting >= 4:
                 word = self.ser.read(4)
@@ -132,19 +157,24 @@ class SerialPort:
         x_ix = y_ix = 0
         num_times = 0
         stop_sending_df = False
+        df_count = 0
         # TODO: matrixify the acts!
         while True:
             if not stop_sending_df:
                 data = weights[y_ix][x_ix] if sending_weights else acts[y_ix]
                 data_frame = self.build_dataframe(0,sending_weights,x_ix,y_ix,data)
                 self.ser.write(data_frame)
+                df_count += 1
                 time.sleep(0.01)
                 nd = int.from_bytes(data_frame, 'little', signed=False)
                 dx_ix = self.get_bit_slice(nd, 29, 23) 
                 dy_ix = self.get_bit_slice(nd, 22, 16) 
                 dsending_weights = self.get_bit(nd, 30)
                 ddata = self.get_bit_slice(nd, 3, 0)
-                print(f"Sent data frame (run={num_times}, x={dx_ix}, y={dy_ix}, a/w={dsending_weights}, data={ddata}) :", data_frame.hex())
+                if verb:
+                    print(f"Sent data frame (run={num_times}, x={dx_ix}, y={dy_ix}, a/w={dsending_weights}, data={ddata}) :", data_frame.hex())
+                else:
+                    print(f"Sent {df_count} frames of {SIZE*SIZE + SIZE} unique", end="\r")
 
                 # update the indeces appropriately
                 x_ix += 1
@@ -164,7 +194,7 @@ class SerialPort:
             if self.ser.in_waiting >= 4:
                 word = self.ser.read(4)
                 if word.hex() == '1c1c1c1c':
-                    print("Received 2nd acknowledgment, stopping sending")
+                    print("\nReceived 2nd acknowledgment, stopping sending")
                     return time.time()  ## return time we have received ack
 
     def build_dataframe(self, msb, weight, xix, yix, data):
