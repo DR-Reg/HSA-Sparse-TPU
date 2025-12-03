@@ -26,7 +26,7 @@ module WsMac #(parameter BIT_WIDTH = 4) (
 	input [BIT_WIDTH-1:0] a,		// activation value to be passed in when en=1
 	input [BIT_WIDTH-1:0] w, 		// weight value to be passed in when wEn=1 (will be written to inner mem)
 	input wEn,
-	input en,
+	input en,                       // not needed here since we gate the latches in the SA, not the unit
 	input clk,
 	input [BIT_WIDTH-1:0] cin,		// partial sum to be passed in
 	output [BIT_WIDTH-1:0] cout		// a*w+cin

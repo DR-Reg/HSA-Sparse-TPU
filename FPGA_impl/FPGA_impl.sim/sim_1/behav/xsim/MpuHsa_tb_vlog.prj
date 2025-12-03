@@ -1,0 +1,23 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../FPGA_impl.gen/sources_1/ip/clk_wiz_0" \
+"../../../../FPGA_impl.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v" \
+"../../../../FPGA_impl.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.v" \
+
+sv xil_defaultlib  --include "../../../../FPGA_impl.gen/sources_1/ip/clk_wiz_0" \
+"../../../../FPGA_impl.srcs/sources_1/new/DeMux.sv" \
+"../../../../FPGA_impl.srcs/sources_1/new/SerialByteReceiver.sv" \
+"../../../../FPGA_impl.srcs/sources_1/new/SerialByteTransmitter.sv" \
+"../../../../FPGA_impl.srcs/sources_1/new/SerialReceiver.sv" \
+"../../../../FPGA_impl.srcs/sources_1/new/SerialTransmitter.sv" \
+"../../../../FPGA_impl.srcs/sources_1/new/VpuHsa.sv" \
+"../../../../FPGA_impl.srcs/sources_1/new/WsMac.sv" \
+"../../../../FPGA_impl.srcs/sources_1/new/Wrapper.sv" \
+"../../../../FPGA_impl.srcs/sources_1/new/MpuHsa.sv" \
+"../../../../FPGA_impl.srcs/sim_1/new/VpuHsa_tb.v" \
+"../../../../FPGA_impl.srcs/sim_1/new/MpuHsa_tb.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

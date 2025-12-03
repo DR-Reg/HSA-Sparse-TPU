@@ -1,6 +1,37 @@
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/DeMux.sv" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module DeMux
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/VpuHsa.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/SerialByteReceiver.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SerialByteReceiver
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/SerialByteTransmitter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SerialByteTransmitter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/SerialReceiver.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SerialReceiver
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/SerialTransmitter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SerialTransmitter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/VpuHsa.sv" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module VpuHsa
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/WsMac.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module WsMac
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/Wrapper.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Wrapper
+WARNING: [VRFC 10-3380] identifier 'frame_ready' is used before its declaration [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/Wrapper.sv:213]
+WARNING: [VRFC 10-3380] identifier 'frame_ready' is used before its declaration [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/Wrapper.sv:218]
+WARNING: [VRFC 10-3380] identifier 'rx_data_frame' is used before its declaration [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/Wrapper.sv:225]
+WARNING: [VRFC 10-3380] identifier 'rx_data_frame' is used before its declaration [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/Wrapper.sv:237]
+WARNING: [VRFC 10-3380] identifier 'frame_ready' is used before its declaration [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/Wrapper.sv:259]
+WARNING: [VRFC 10-3380] identifier 'rx_data_frame' is used before its declaration [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/Wrapper.sv:264]
+WARNING: [VRFC 10-3380] identifier 'rx_data_frame' is used before its declaration [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/Wrapper.sv:270]
+WARNING: [VRFC 10-3380] identifier 'rx_data_frame' is used before its declaration [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/Wrapper.sv:274]
+WARNING: [VRFC 10-3380] identifier 'rx_data_frame' is used before its declaration [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/Wrapper.sv:277]
+WARNING: [VRFC 10-3380] identifier 'rx_data_frame' is used before its declaration [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/Wrapper.sv:279]
+WARNING: [VRFC 10-3380] identifier 'rx_data_frame' is used before its declaration [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/Wrapper.sv:282]
+WARNING: [VRFC 10-3380] identifier 'rx_data_frame' is used before its declaration [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/Wrapper.sv:284]
+WARNING: [VRFC 10-3380] identifier 'frame_ready' is used before its declaration [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/Wrapper.sv:303]
+WARNING: [VRFC 10-3380] identifier 'frame_ready' is used before its declaration [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/Wrapper.sv:305]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MpuHsa
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sim_1/new/VpuHsa_tb.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module VpuHsa_tb
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sim_1/new/MpuHsa_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MpuHsa_tb
+WARNING: [VRFC 10-3380] identifier 'en' is used before its declaration [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sim_1/new/MpuHsa_tb.sv:42]

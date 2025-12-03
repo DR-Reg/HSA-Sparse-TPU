@@ -1,7 +1,0 @@
-Running: xsim.dir/VpuHsa_tb_behav/xsimk.exe -simmode gui -wdb VpuHsa_tb_behav.wdb -simrunnum 0 -socket 65178
-Design successfully loaded
-Design Loading Memory Usage: 8872 KB (Peak: 8872 KB)
-Design Loading CPU Usage: 31 ms
-Simulation completed
-Simulation Memory Usage: 9616 KB (Peak: 9616 KB)
-Simulation CPU Usage: 46 ms
