@@ -1,8 +1,8 @@
 Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
-| Date         : Wed Dec  3 18:45:16 2025
-| Host         : P2-07 running 64-bit major release  (build 9200)
+| Date         : Thu Dec  4 05:45:35 2025
+| Host         : P2-08 running 64-bit major release  (build 9200)
 | Command      : report_utilization -file MpuHsa_Wrapper_utilization_synth.rpt -pb MpuHsa_Wrapper_utilization_synth.pb
 | Design       : MpuHsa_Wrapper
 | Device       : 7a100tcsg324-1
@@ -30,11 +30,11 @@ Table of Contents
 +-------------------------+------+-------+------------+-----------+-------+
 |        Site Type        | Used | Fixed | Prohibited | Available | Util% |
 +-------------------------+------+-------+------------+-----------+-------+
-| Slice LUTs*             |  262 |     0 |          0 |     63400 |  0.41 |
-|   LUT as Logic          |  262 |     0 |          0 |     63400 |  0.41 |
+| Slice LUTs*             |  232 |     0 |          0 |     63400 |  0.37 |
+|   LUT as Logic          |  232 |     0 |          0 |     63400 |  0.37 |
 |   LUT as Memory         |    0 |     0 |          0 |     19000 |  0.00 |
-| Slice Registers         |  326 |     0 |          0 |    126800 |  0.26 |
-|   Register as Flip Flop |  326 |     0 |          0 |    126800 |  0.26 |
+| Slice Registers         |  200 |     0 |          0 |    126800 |  0.16 |
+|   Register as Flip Flop |  200 |     0 |          0 |    126800 |  0.16 |
 |   Register as Latch     |    0 |     0 |          0 |    126800 |  0.00 |
 | F7 Muxes                |    1 |     0 |          0 |     31700 | <0.01 |
 | F8 Muxes                |    0 |     0 |          0 |     15850 |  0.00 |
@@ -56,8 +56,8 @@ Table of Contents
 | 0     |          Yes |           - |            - |
 | 0     |          Yes |           - |          Set |
 | 0     |          Yes |           - |        Reset |
-| 13    |          Yes |         Set |            - |
-| 313   |          Yes |       Reset |            - |
+| 0     |          Yes |         Set |            - |
+| 200   |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -90,7 +90,7 @@ Table of Contents
 +-----------------------------+------+-------+------------+-----------+-------+
 |          Site Type          | Used | Fixed | Prohibited | Available | Util% |
 +-----------------------------+------+-------+------------+-----------+-------+
-| Bonded IOB                  |   35 |     0 |          0 |       210 | 16.67 |
+| Bonded IOB                  |   19 |     0 |          0 |       210 |  9.05 |
 | Bonded IPADs                |    0 |     0 |          0 |         2 |  0.00 |
 | PHY_CONTROL                 |    0 |     0 |          0 |         6 |  0.00 |
 | PHASER_REF                  |    0 |     0 |          0 |         6 |  0.00 |
@@ -146,16 +146,15 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| FDRE     |  313 |        Flop & Latch |
-| LUT6     |   92 |                 LUT |
+| FDRE     |  200 |        Flop & Latch |
+| LUT6     |   97 |                 LUT |
 | LUT2     |   69 |                 LUT |
-| LUT5     |   54 |                 LUT |
-| LUT3     |   53 |                 LUT |
-| LUT4     |   48 |                 LUT |
-| OBUF     |   33 |                  IO |
-| CARRY4   |   24 |          CarryLogic |
-| FDSE     |   13 |        Flop & Latch |
-| LUT1     |    8 |                 LUT |
+| LUT4     |   46 |                 LUT |
+| LUT5     |   42 |                 LUT |
+| LUT3     |   40 |                 LUT |
+| CARRY4   |   19 |          CarryLogic |
+| OBUF     |   17 |                  IO |
+| LUT1     |    5 |                 LUT |
 | IBUF     |    2 |                  IO |
 | MUXF7    |    1 |               MuxFx |
 +----------+------+---------------------+
@@ -167,7 +166,6 @@ Table of Contents
 +-----------+------+
 |  Ref Name | Used |
 +-----------+------+
-| ila_0     |    1 |
 | clk_wiz_0 |    1 |
 +-----------+------+
 

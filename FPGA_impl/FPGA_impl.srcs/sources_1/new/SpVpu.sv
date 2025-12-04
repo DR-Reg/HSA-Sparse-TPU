@@ -34,7 +34,6 @@ module SpVpu #(parameter SIZE = 2, BIT_WIDTH = 4) (
 );
 
 	/* Create and wire the MAC units and corresponding latches */
-/*
 	genvar i,j;
 	reg [BIT_WIDTH-1:0] left_latches [SIZE-1:0][SIZE/2-1:0]; 			// store downwards flow of partial sums
 	wire [BIT_WIDTH-1:0] broadcast_channels_even [SIZE/2-1:0];     		// to broadcast on a per-column basis (i.e. not all at all times)
@@ -50,7 +49,9 @@ module SpVpu #(parameter SIZE = 2, BIT_WIDTH = 4) (
                                                                                 // the internal reg holding the weight is written to               
 
 				SpMac #(.BIT_WIDTH(BIT_WIDTH)) mac(
-					.a(broadcast_channels[j]),
+					// .a(weight_parity_tags[i] ? broadcast_channels_odd[j] : broadcast_channels_even[j]),
+                    .a0(broadcast_channels_even[j]),
+                    .a1(broadcast_channels_odd[j]),
 					.w(weights[i]),				// not used in computation, but when the weight col is passed in,
                     .wix(weight_parity_tags[i]),
 					.wEn(wEnable),       			
@@ -63,29 +64,21 @@ module SpVpu #(parameter SIZE = 2, BIT_WIDTH = 4) (
 				always @(posedge clk & enable)
 					left_latches[i][j] <= psum;
 			end 
-*/
 			/* result just grabs from the last layer of latches */
-/*
 			assign result[i] = left_latches[i][SIZE-1];
 		end
 	endgenerate
-	
-*/
 	/* DeMux the input activations to go down the correct broadcast_channels */
-/*
     DeMux #(.BIT_WIDTH(BIT_WIDTH), .SIZE(SIZE/2)) demux_even(
         .in(activation_even),
         .sel(act_col_ix),
         .out(broadcast_channels_even)
 	);
 
-*/
     /* DeMux the input activations to go down the correct broadcast_channels */
-/*
     DeMux #(.BIT_WIDTH(BIT_WIDTH), .SIZE(SIZE/2)) demux_odd(
         .in(activation_odd),
         .sel(act_col_ix),
         .out(broadcast_channels_odd)
 	);
-*/
 endmodule  

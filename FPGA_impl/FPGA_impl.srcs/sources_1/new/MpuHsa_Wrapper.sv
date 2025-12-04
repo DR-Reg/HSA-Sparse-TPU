@@ -38,13 +38,13 @@ module MpuHsa_Wrapper(
         internal_reset <= 0;
     end
 
-    ila_0 debug_ila (
-        .clk(clk_100mhz),
-        .probe0(wEn),
-        .probe1(clk100),
-        .probe2({operating_mode, weight_row_ix, weight_col_ix, curr_weight}),
-        .probe3({weights_sram[0][0], weights_sram[0][1], weights_sram[1][0], weights_sram[1][1]})
-    );
+    // ila_0 debug_ila (
+    //     .clk(clk_100mhz),
+    //     .probe0(wEn),
+    //     .probe1(clk100),
+    //     .probe2({operating_mode, weight_row_ix, weight_col_ix, curr_weight}),
+    //     .probe3({weights_sram[0][0], weights_sram[0][1], weights_sram[1][0], weights_sram[1][1]})
+    // );
 
 
     wire locked;

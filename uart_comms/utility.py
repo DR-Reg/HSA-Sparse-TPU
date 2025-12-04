@@ -26,6 +26,13 @@ class SAUnit:
         else:   
             raise Exception(f"Unable to open port {port}")
 
+    def switch_mode(self, vector_mode):
+        if vector_mode:     # switch to vector mode
+            self.ser.write(bytes([0xFE]*4))
+        else:
+            self.ser.write(bytes([0xFD]*4))
+        self.ser.flush()
+
     def rand_test(self, vector_mode=1, verb=0):
         N = self.N
         if vector_mode:

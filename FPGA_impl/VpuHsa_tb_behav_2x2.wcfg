@@ -11,15 +11,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
-      <ZoomEndTime time="129.801 ns"></ZoomEndTime>
-      <Cursor1Time time="28.018 ns"></Cursor1Time>
+      <ZoomStartTime time="205.833 ns"></ZoomStartTime>
+      <ZoomEndTime time="558.834 ns"></ZoomEndTime>
+      <Cursor1Time time="500.000 ns"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="226"></NameColumnWidth>
-      <ValueColumnWidth column_width="110"></ValueColumnWidth>
+      <ValueColumnWidth column_width="106"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="12" />
+   <WVObjectSize size="21" />
    <wvobject fp_name="/Hsa_tb/weight_col_bus" type="array">
       <obj_property name="ElementShortName">weight_col_bus[1:0][3:0]</obj_property>
       <obj_property name="ObjectShortName">weight_col_bus[1:0][3:0]</obj_property>
@@ -40,33 +40,71 @@
       <obj_property name="ElementShortName">left_latches[1:0][1:0][3:0]</obj_property>
       <obj_property name="ObjectShortName">left_latches[1:0][1:0][3:0]</obj_property>
       <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="isExpanded"></obj_property>
    </wvobject>
    <wvobject fp_name="/Hsa_tb/mpu_hsa/\row[0].col[0].mac /a" type="array">
       <obj_property name="ElementShortName">a[3:0]</obj_property>
       <obj_property name="ObjectShortName">a[3:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/Hsa_tb/mpu_hsa/\row[0].col[0].mac /w" type="array">
-      <obj_property name="ElementShortName">w[3:0]</obj_property>
-      <obj_property name="ObjectShortName">w[3:0]</obj_property>
+   <wvobject fp_name="/Hsa_tb/mpu_hsa/\row[0].col[0].mac /cout" type="array">
+      <obj_property name="ElementShortName">cout[3:0]</obj_property>
+      <obj_property name="ObjectShortName">cout[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Hsa_tb/mpu_hsa/\row[1].col[0].mac /cout" type="array">
+      <obj_property name="ElementShortName">cout[3:0]</obj_property>
+      <obj_property name="ObjectShortName">cout[3:0]</obj_property>
    </wvobject>
    <wvobject fp_name="/Hsa_tb/mpu_hsa/\row[0].col[0].mac /cin" type="array">
       <obj_property name="ElementShortName">cin[3:0]</obj_property>
       <obj_property name="ObjectShortName">cin[3:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/Hsa_tb/mpu_hsa/\row[0].col[1].mac /a" type="array">
-      <obj_property name="ElementShortName">a[3:0]</obj_property>
-      <obj_property name="ObjectShortName">a[3:0]</obj_property>
+   <wvobject fp_name="/Hsa_tb/mpu_hsa/\row[0].col[0].enable " type="logic">
+      <obj_property name="ElementShortName">\row[0].col[0].enable </obj_property>
+      <obj_property name="ObjectShortName">\row[0].col[0].enable </obj_property>
    </wvobject>
-   <wvobject fp_name="/Hsa_tb/mpu_hsa/\row[0].col[1].mac /w" type="array">
-      <obj_property name="ElementShortName">w[3:0]</obj_property>
-      <obj_property name="ObjectShortName">w[3:0]</obj_property>
+   <wvobject fp_name="/Hsa_tb/mpu_hsa/\row[1].col[0].enable " type="logic">
+      <obj_property name="ElementShortName">\row[1].col[0].enable </obj_property>
+      <obj_property name="ObjectShortName">\row[1].col[0].enable </obj_property>
    </wvobject>
-   <wvobject fp_name="/Hsa_tb/mpu_hsa/\row[0].col[1].mac /cin" type="array">
-      <obj_property name="ElementShortName">cin[3:0]</obj_property>
-      <obj_property name="ObjectShortName">cin[3:0]</obj_property>
+   <wvobject fp_name="/Hsa_tb/en" type="logic">
+      <obj_property name="ElementShortName">en</obj_property>
+      <obj_property name="ObjectShortName">en</obj_property>
    </wvobject>
    <wvobject fp_name="/Hsa_tb/mpu_hsa/activation" type="array">
       <obj_property name="ElementShortName">activation[1:0][3:0]</obj_property>
       <obj_property name="ObjectShortName">activation[1:0][3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Hsa_tb/act_value" type="array">
+      <obj_property name="ElementShortName">act_value[3:0]</obj_property>
+      <obj_property name="ObjectShortName">act_value[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Hsa_tb/act_col_ix" type="array">
+      <obj_property name="ElementShortName">act_col_ix[0:0]</obj_property>
+      <obj_property name="ObjectShortName">act_col_ix[0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Hsa_tb/cycle_ctr" type="array">
+      <obj_property name="ElementShortName">cycle_ctr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">cycle_ctr[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Hsa_tb/mpu_hsa/broadcast_channels" type="array">
+      <obj_property name="ElementShortName">broadcast_channels[1:0][3:0]</obj_property>
+      <obj_property name="ObjectShortName">broadcast_channels[1:0][3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Hsa_tb/mpu_hsa/\row[0].col[0].mac /weight" type="array">
+      <obj_property name="ElementShortName">weight[3:0]</obj_property>
+      <obj_property name="ObjectShortName">weight[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Hsa_tb/mpu_hsa/\row[0].col[1].mac /weight" type="array">
+      <obj_property name="ElementShortName">weight[3:0]</obj_property>
+      <obj_property name="ObjectShortName">weight[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Hsa_tb/mpu_hsa/\row[1].col[0].mac /weight" type="array">
+      <obj_property name="ElementShortName">weight[3:0]</obj_property>
+      <obj_property name="ObjectShortName">weight[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Hsa_tb/mpu_hsa/\row[1].col[1].mac /weight" type="array">
+      <obj_property name="ElementShortName">weight[3:0]</obj_property>
+      <obj_property name="ObjectShortName">weight[3:0]</obj_property>
    </wvobject>
 </wave_config>

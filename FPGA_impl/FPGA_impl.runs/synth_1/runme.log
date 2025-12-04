@@ -17,7 +17,7 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 12836
+INFO: [Synth 8-7075] Helper process launched with PID 24348
 WARNING: [Synth 8-6901] identifier 'frame_ready' is used before its declaration [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/Wrapper.sv:213]
 WARNING: [Synth 8-6901] identifier 'rx_data_frame' is used before its declaration [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/Wrapper.sv:213]
 WARNING: [Synth 8-6901] identifier 'frame_ready' is used before its declaration [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/Wrapper.sv:218]
@@ -39,106 +39,144 @@ WARNING: [Synth 8-6901] identifier 'frame_ready' is used before its declaration 
 WARNING: [Synth 8-6901] identifier 'rx_data_frame' is used before its declaration [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/Wrapper.sv:303]
 WARNING: [Synth 8-6901] identifier 'frame_ready' is used before its declaration [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/Wrapper.sv:305]
 WARNING: [Synth 8-6901] identifier 'rx_data_frame' is used before its declaration [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/Wrapper.sv:305]
-WARNING: [Synth 8-992] clk100 is already implicitly declared earlier [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:106]
-WARNING: [Synth 8-992] operating_mode is already implicitly declared earlier [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:155]
-WARNING: [Synth 8-992] weight_col_ix is already implicitly declared earlier [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:191]
-WARNING: [Synth 8-992] weight_row_ix is already implicitly declared earlier [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:192]
-WARNING: [Synth 8-992] wEn is already implicitly declared earlier [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:193]
-WARNING: [Synth 8-992] curr_weight is already implicitly declared earlier [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:203]
-WARNING: [Synth 8-6901] identifier 'misal_fsm' is used before its declaration [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:57]
-WARNING: [Synth 8-6901] identifier 'data_buffer' is used before its declaration [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:204]
-WARNING: [Synth 8-6901] identifier 'frame_ready' is used before its declaration [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:262]
-WARNING: [Synth 8-6901] identifier 'rx_data_frame' is used before its declaration [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:264]
+WARNING: [Synth 8-6901] identifier 'rx_data_frame' is used before its declaration [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:148]
+WARNING: [Synth 8-6901] identifier 'frame_ready' is used before its declaration [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:255]
+WARNING: [Synth 8-6901] identifier 'rx_data_frame' is used before its declaration [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:255]
+WARNING: [Synth 8-6901] identifier 'frame_ready' is used before its declaration [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:260]
+WARNING: [Synth 8-6901] identifier 'rx_data_frame' is used before its declaration [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:267]
+WARNING: [Synth 8-6901] identifier 'rx_data_frame' is used before its declaration [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:279]
+WARNING: [Synth 8-6901] identifier 'frame_ready' is used before its declaration [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:302]
+WARNING: [Synth 8-6901] identifier 'rx_data_frame' is used before its declaration [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:307]
+WARNING: [Synth 8-6901] identifier 'rx_data_frame' is used before its declaration [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:313]
+WARNING: [Synth 8-6901] identifier 'rx_data_frame' is used before its declaration [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:317]
+WARNING: [Synth 8-6901] identifier 'rx_data_frame' is used before its declaration [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:327]
+WARNING: [Synth 8-6901] identifier 'rx_data_frame' is used before its declaration [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:328]
+WARNING: [Synth 8-6901] identifier 'rx_data_frame' is used before its declaration [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:331]
+WARNING: [Synth 8-6901] identifier 'rx_data_frame' is used before its declaration [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:331]
+WARNING: [Synth 8-6901] identifier 'rx_data_frame' is used before its declaration [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:334]
+WARNING: [Synth 8-6901] identifier 'rx_data_frame' is used before its declaration [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:334]
+WARNING: [Synth 8-6901] identifier 'rx_data_frame' is used before its declaration [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:334]
+WARNING: [Synth 8-6901] identifier 'rx_data_frame' is used before its declaration [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:335]
+WARNING: [Synth 8-6901] identifier 'rx_data_frame' is used before its declaration [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:335]
+WARNING: [Synth 8-6901] identifier 'frame_ready' is used before its declaration [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:354]
+WARNING: [Synth 8-6901] identifier 'rx_data_frame' is used before its declaration [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:354]
+WARNING: [Synth 8-6901] identifier 'frame_ready' is used before its declaration [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:356]
+WARNING: [Synth 8-6901] identifier 'rx_data_frame' is used before its declaration [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:356]
+WARNING: [Synth 8-992] clk100 is already implicitly declared earlier [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper_latched.sv:84]
+WARNING: [Synth 8-992] operating_mode is already implicitly declared earlier [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper_latched.sv:133]
+WARNING: [Synth 8-992] weight_col_ix is already implicitly declared earlier [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper_latched.sv:169]
+WARNING: [Synth 8-992] weight_row_ix is already implicitly declared earlier [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper_latched.sv:170]
+WARNING: [Synth 8-992] wEn is already implicitly declared earlier [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper_latched.sv:171]
+WARNING: [Synth 8-992] curr_weight is already implicitly declared earlier [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper_latched.sv:181]
+WARNING: [Synth 8-6901] identifier 'misal_fsm' is used before its declaration [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper_latched.sv:35]
+WARNING: [Synth 8-6901] identifier 'data_buffer' is used before its declaration [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper_latched.sv:182]
+WARNING: [Synth 8-6901] identifier 'frame_ready' is used before its declaration [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper_latched.sv:240]
+WARNING: [Synth 8-6901] identifier 'rx_data_frame' is used before its declaration [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper_latched.sv:242]
+WARNING: [Synth 8-6901] identifier 'frame_ready' is used before its declaration [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/SpVpu_Wrapper.v:218]
+WARNING: [Synth 8-6901] identifier 'rx_data_frame' is used before its declaration [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/SpVpu_Wrapper.v:218]
+WARNING: [Synth 8-6901] identifier 'frame_ready' is used before its declaration [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/SpVpu_Wrapper.v:223]
+WARNING: [Synth 8-6901] identifier 'rx_data_frame' is used before its declaration [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/SpVpu_Wrapper.v:230]
+WARNING: [Synth 8-6901] identifier 'rx_data_frame' is used before its declaration [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/SpVpu_Wrapper.v:242]
+WARNING: [Synth 8-6901] identifier 'frame_ready' is used before its declaration [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/SpVpu_Wrapper.v:264]
+WARNING: [Synth 8-6901] identifier 'rx_data_frame' is used before its declaration [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/SpVpu_Wrapper.v:269]
+WARNING: [Synth 8-6901] identifier 'rx_data_frame' is used before its declaration [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/SpVpu_Wrapper.v:275]
+WARNING: [Synth 8-6901] identifier 'rx_data_frame' is used before its declaration [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/SpVpu_Wrapper.v:279]
+WARNING: [Synth 8-6901] identifier 'rx_data_frame' is used before its declaration [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/SpVpu_Wrapper.v:282]
+WARNING: [Synth 8-6901] identifier 'rx_data_frame' is used before its declaration [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/SpVpu_Wrapper.v:282]
+WARNING: [Synth 8-6901] identifier 'rx_data_frame' is used before its declaration [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/SpVpu_Wrapper.v:282]
+WARNING: [Synth 8-6901] identifier 'rx_data_frame' is used before its declaration [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/SpVpu_Wrapper.v:284]
+WARNING: [Synth 8-6901] identifier 'rx_data_frame' is used before its declaration [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/SpVpu_Wrapper.v:284]
+WARNING: [Synth 8-6901] identifier 'rx_data_frame' is used before its declaration [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/SpVpu_Wrapper.v:287]
+WARNING: [Synth 8-6901] identifier 'rx_data_frame' is used before its declaration [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/SpVpu_Wrapper.v:287]
+WARNING: [Synth 8-6901] identifier 'rx_data_frame' is used before its declaration [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/SpVpu_Wrapper.v:289]
+WARNING: [Synth 8-6901] identifier 'frame_ready' is used before its declaration [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/SpVpu_Wrapper.v:308]
+WARNING: [Synth 8-6901] identifier 'rx_data_frame' is used before its declaration [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/SpVpu_Wrapper.v:308]
+WARNING: [Synth 8-6901] identifier 'frame_ready' is used before its declaration [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/SpVpu_Wrapper.v:310]
+WARNING: [Synth 8-6901] identifier 'rx_data_frame' is used before its declaration [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/SpVpu_Wrapper.v:310]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1330.020 ; gain = 0.000
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1329.191 ; gain = 0.000
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'MpuHsa_Wrapper' [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:23]
-WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:43]
-INFO: [Synth 8-6157] synthesizing module 'ila_0' [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.runs/synth_1/.Xil/Vivado-16120-P2-07/realtime/ila_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'ila_0' (1#1) [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.runs/synth_1/.Xil/Vivado-16120-P2-07/realtime/ila_0_stub.v:6]
-WARNING: [Synth 8-324] index 8 out of range [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:64]
-WARNING: [Synth 8-324] index 9 out of range [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:65]
-WARNING: [Synth 8-324] index 10 out of range [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:66]
-WARNING: [Synth 8-324] index 11 out of range [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:67]
-WARNING: [Synth 8-324] index 12 out of range [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:68]
-WARNING: [Synth 8-324] index 13 out of range [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:69]
-WARNING: [Synth 8-324] index 14 out of range [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:70]
-WARNING: [Synth 8-324] index 15 out of range [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:71]
-INFO: [Synth 8-226] default block is never used [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:82]
-INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.runs/synth_1/.Xil/Vivado-16120-P2-07/realtime/clk_wiz_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (2#1) [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.runs/synth_1/.Xil/Vivado-16120-P2-07/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.runs/synth_1/.Xil/Vivado-23188-P2-08/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (1#1) [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.runs/synth_1/.Xil/Vivado-23188-P2-08/realtime/clk_wiz_0_stub.v:5]
 INFO: [Synth 8-6157] synthesizing module 'MpuHsa' [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa.sv:34]
 	Parameter SIZE bound to: 2 - type: integer 
 	Parameter BIT_WIDTH bound to: 8 - type: integer 
 INFO: [Synth 8-6157] synthesizing module 'WsMac' [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/WsMac.sv:25]
 	Parameter BIT_WIDTH bound to: 8 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'WsMac' (3#1) [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/WsMac.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'WsMac' (2#1) [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/WsMac.sv:25]
 WARNING: [Synth 8-689] width (32) of port connection 'cin' does not match port width (8) of module 'WsMac' [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa.sv:86]
 WARNING: [Synth 8-689] width (32) of port connection 'cin' does not match port width (8) of module 'WsMac' [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa.sv:86]
-INFO: [Synth 8-6155] done synthesizing module 'MpuHsa' (4#1) [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa.sv:34]
-INFO: [Synth 8-6157] synthesizing module 'SynchCDC' [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/SynchCDC.sv:23]
-INFO: [Synth 8-6155] done synthesizing module 'SynchCDC' (5#1) [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/SynchCDC.sv:23]
-WARNING: [Synth 8-151] case item 2'b10 is unreachable [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:394]
+INFO: [Synth 8-6155] done synthesizing module 'MpuHsa' (3#1) [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa.sv:34]
 INFO: [Synth 8-6157] synthesizing module 'SerialTransmitter' [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/SerialTransmitter.sv:23]
 	Parameter FRAME_WIDTH bound to: 32 - type: integer 
 INFO: [Synth 8-6157] synthesizing module 'SerialByteTransmitter' [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/SerialByteTransmitter.sv:23]
-INFO: [Synth 8-6155] done synthesizing module 'SerialByteTransmitter' (6#1) [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/SerialByteTransmitter.sv:23]
-INFO: [Synth 8-6155] done synthesizing module 'SerialTransmitter' (7#1) [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/SerialTransmitter.sv:23]
-WARNING: [Synth 8-7071] port 'ready' of module 'SerialTransmitter' is unconnected for instance 'UART_TRANSMITTER' [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:517]
-WARNING: [Synth 8-7023] instance 'UART_TRANSMITTER' of module 'SerialTransmitter' has 6 connections declared, but only 5 given [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:517]
+INFO: [Synth 8-6155] done synthesizing module 'SerialByteTransmitter' (4#1) [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/SerialByteTransmitter.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'SerialTransmitter' (5#1) [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/SerialTransmitter.sv:23]
+WARNING: [Synth 8-7071] port 'ready' of module 'SerialTransmitter' is unconnected for instance 'UART_TRANSMITTER' [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:397]
+WARNING: [Synth 8-7023] instance 'UART_TRANSMITTER' of module 'SerialTransmitter' has 6 connections declared, but only 5 given [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:397]
 INFO: [Synth 8-6157] synthesizing module 'SerialReceiver' [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/SerialReceiver.sv:23]
 	Parameter FRAME_WIDTH bound to: 32 - type: integer 
 INFO: [Synth 8-6157] synthesizing module 'SerialByteReceiver' [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/SerialByteReceiver.sv:23]
-INFO: [Synth 8-6155] done synthesizing module 'SerialByteReceiver' (8#1) [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/SerialByteReceiver.sv:23]
-INFO: [Synth 8-6155] done synthesizing module 'SerialReceiver' (9#1) [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/SerialReceiver.sv:23]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'mpu_hsa'. This will prevent further optimization [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:207]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'debug_ila'. This will prevent further optimization [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:43]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'pll'. This will prevent further optimization [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:109]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'opmode1_cdc'. This will prevent further optimization [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:247]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'opmode0_cdc'. This will prevent further optimization [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:241]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'reset_cdc'. This will prevent further optimization [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:233]
-INFO: [Synth 8-6155] done synthesizing module 'MpuHsa_Wrapper' (10#1) [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'SerialByteReceiver' (6#1) [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/SerialByteReceiver.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'SerialReceiver' (7#1) [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/SerialReceiver.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'MpuHsa_Wrapper' (8#1) [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:23]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1330.020 ; gain = 0.000
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1329.191 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1330.020 ; gain = 0.000
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1329.191 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1330.020 ; gain = 0.000
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1329.191 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1330.020 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1329.191 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
 Parsing XDC File [c:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'pll'
 Finished Parsing XDC File [c:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'pll'
-Parsing XDC File [c:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.gen/sources_1/ip/ila_0/ila_0/ila_0_in_context.xdc] for cell 'debug_ila'
-Finished Parsing XDC File [c:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.gen/sources_1/ip/ila_0/ila_0/ila_0_in_context.xdc] for cell 'debug_ila'
 Parsing XDC File [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/constrs_1/new/master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'DG[0]'. [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/constrs_1/new/master.xdc:32]
+WARNING: [Vivado 12-584] No ports matched 'DG[1]'. [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/constrs_1/new/master.xdc:33]
+WARNING: [Vivado 12-584] No ports matched 'DG[2]'. [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/constrs_1/new/master.xdc:34]
+WARNING: [Vivado 12-584] No ports matched 'DG[3]'. [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/constrs_1/new/master.xdc:35]
+WARNING: [Vivado 12-584] No ports matched 'DG[4]'. [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/constrs_1/new/master.xdc:36]
+WARNING: [Vivado 12-584] No ports matched 'DG[5]'. [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/constrs_1/new/master.xdc:37]
+WARNING: [Vivado 12-584] No ports matched 'DG[6]'. [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/constrs_1/new/master.xdc:38]
+WARNING: [Vivado 12-584] No ports matched 'DG[7]'. [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/constrs_1/new/master.xdc:39]
+WARNING: [Vivado 12-584] No ports matched 'AN[0]'. [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/constrs_1/new/master.xdc:41]
+WARNING: [Vivado 12-584] No ports matched 'AN[1]'. [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/constrs_1/new/master.xdc:42]
+WARNING: [Vivado 12-584] No ports matched 'AN[2]'. [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/constrs_1/new/master.xdc:43]
+WARNING: [Vivado 12-584] No ports matched 'AN[3]'. [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/constrs_1/new/master.xdc:44]
+WARNING: [Vivado 12-584] No ports matched 'AN[4]'. [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/constrs_1/new/master.xdc:45]
+WARNING: [Vivado 12-584] No ports matched 'AN[5]'. [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/constrs_1/new/master.xdc:46]
+WARNING: [Vivado 12-584] No ports matched 'AN[6]'. [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/constrs_1/new/master.xdc:47]
+WARNING: [Vivado 12-584] No ports matched 'AN[7]'. [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/constrs_1/new/master.xdc:48]
 Finished Parsing XDC File [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/constrs_1/new/master.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/constrs_1/new/master.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/MpuHsa_Wrapper_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/constrs_1/new/master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/MpuHsa_Wrapper_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/MpuHsa_Wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1442.348 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1446.328 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1442.348 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1446.328 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1442.348 ; gain = 112.328
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1446.328 ; gain = 117.137
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1442.348 ; gain = 112.328
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1446.328 ; gain = 117.137
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -146,12 +184,22 @@ Start Applying 'set_property' XDC Constraints
 Applied set_property IO_BUFFER_TYPE = NONE for clk_100mhz. (constraint file  c:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 4).
 Applied set_property CLOCK_BUFFER_TYPE = NONE for clk_100mhz. (constraint file  c:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 5).
 Applied set_property KEEP_HIERARCHY = SOFT for pll. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for debug_ila. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1442.348 ; gain = 112.328
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1446.328 ; gain = 117.137
 ---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'operating_mode_reg' in module 'MpuHsa_Wrapper'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE1 |                               00 |                               00
+                 iSTATE0 |                               01 |                               01
+                  iSTATE |                               10 |                               10
+                 iSTATE2 |                               11 |                               11
+*
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'operating_mode_reg' using encoding 'sequential' in module 'MpuHsa_Wrapper'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1442.348 ; gain = 112.328
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1446.328 ; gain = 117.137
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -159,46 +207,41 @@ Start RTL Component Statistics
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input   32 Bit       Adders := 4     
-	   2 Input   20 Bit       Adders := 1     
 	   2 Input    7 Bit       Adders := 2     
 	   2 Input    4 Bit       Adders := 5     
-	   2 Input    3 Bit       Adders := 2     
-	   3 Input    1 Bit       Adders := 2     
+	   2 Input    3 Bit       Adders := 1     
 	   2 Input    1 Bit       Adders := 2     
+	   3 Input    1 Bit       Adders := 2     
 +---XORs : 
 	                8 Bit    Wide XORs := 2     
 +---Registers : 
-	               32 Bit    Registers := 4     
-	               20 Bit    Registers := 1     
+	               32 Bit    Registers := 3     
 	               16 Bit    Registers := 1     
 	               11 Bit    Registers := 1     
-	                8 Bit    Registers := 28    
-	                7 Bit    Registers := 3     
-	                4 Bit    Registers := 8     
-	                3 Bit    Registers := 2     
-	                2 Bit    Registers := 3     
-	                1 Bit    Registers := 30    
+	                8 Bit    Registers := 26    
+	                7 Bit    Registers := 2     
+	                4 Bit    Registers := 7     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 19    
 +---Muxes : 
-	   2 Input   32 Bit        Muxes := 8     
-	   2 Input   20 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 9     
 	   2 Input   16 Bit        Muxes := 9     
 	   4 Input   16 Bit        Muxes := 1     
 	   2 Input   11 Bit        Muxes := 1     
 	   4 Input    8 Bit        Muxes := 2     
-	   2 Input    8 Bit        Muxes := 10    
+	   2 Input    8 Bit        Muxes := 9     
 	   2 Input    7 Bit        Muxes := 2     
 	   2 Input    4 Bit        Muxes := 17    
 	   4 Input    4 Bit        Muxes := 4     
-	   8 Input    4 Bit        Muxes := 1     
 	  32 Input    2 Bit        Muxes := 1     
-	   2 Input    2 Bit        Muxes := 13    
+	   2 Input    2 Bit        Muxes := 4     
 	   5 Input    2 Bit        Muxes := 1     
 	   4 Input    2 Bit        Muxes := 2     
-	   3 Input    2 Bit        Muxes := 1     
-	   2 Input    1 Bit        Muxes := 86    
-	   3 Input    1 Bit        Muxes := 1     
-	   4 Input    1 Bit        Muxes := 14    
-	   5 Input    1 Bit        Muxes := 6     
+	   2 Input    1 Bit        Muxes := 70    
+	   3 Input    1 Bit        Muxes := 4     
+	   4 Input    1 Bit        Muxes := 11    
+	   5 Input    1 Bit        Muxes := 7     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -215,60 +258,60 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1442.348 ; gain = 112.328
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1446.328 ; gain = 117.137
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1442.348 ; gain = 112.328
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1446.328 ; gain = 117.137
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1442.348 ; gain = 112.328
+Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1446.328 ; gain = 117.137
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-4765] Removing register instance (\genblk1[0].cycle_ctr_reg[31] ) from module (MpuHsa_Wrapper) as it is equivalent to (\genblk1[1].cycle_ctr_reg[31] ) and driving same net [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:283]
-INFO: [Synth 8-4765] Removing register instance (\genblk1[0].cycle_ctr_reg[30] ) from module (MpuHsa_Wrapper) as it is equivalent to (\genblk1[1].cycle_ctr_reg[30] ) and driving same net [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:283]
-INFO: [Synth 8-4765] Removing register instance (\genblk1[0].cycle_ctr_reg[29] ) from module (MpuHsa_Wrapper) as it is equivalent to (\genblk1[1].cycle_ctr_reg[29] ) and driving same net [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:283]
-INFO: [Synth 8-4765] Removing register instance (\genblk1[0].cycle_ctr_reg[28] ) from module (MpuHsa_Wrapper) as it is equivalent to (\genblk1[1].cycle_ctr_reg[28] ) and driving same net [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:283]
-INFO: [Synth 8-4765] Removing register instance (\genblk1[0].cycle_ctr_reg[27] ) from module (MpuHsa_Wrapper) as it is equivalent to (\genblk1[1].cycle_ctr_reg[27] ) and driving same net [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:283]
-INFO: [Synth 8-4765] Removing register instance (\genblk1[0].cycle_ctr_reg[26] ) from module (MpuHsa_Wrapper) as it is equivalent to (\genblk1[1].cycle_ctr_reg[26] ) and driving same net [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:283]
-INFO: [Synth 8-4765] Removing register instance (\genblk1[0].cycle_ctr_reg[25] ) from module (MpuHsa_Wrapper) as it is equivalent to (\genblk1[1].cycle_ctr_reg[25] ) and driving same net [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:283]
-INFO: [Synth 8-4765] Removing register instance (\genblk1[0].cycle_ctr_reg[24] ) from module (MpuHsa_Wrapper) as it is equivalent to (\genblk1[1].cycle_ctr_reg[24] ) and driving same net [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:283]
-INFO: [Synth 8-4765] Removing register instance (\genblk1[0].cycle_ctr_reg[23] ) from module (MpuHsa_Wrapper) as it is equivalent to (\genblk1[1].cycle_ctr_reg[23] ) and driving same net [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:283]
-INFO: [Synth 8-4765] Removing register instance (\genblk1[0].cycle_ctr_reg[22] ) from module (MpuHsa_Wrapper) as it is equivalent to (\genblk1[1].cycle_ctr_reg[22] ) and driving same net [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:283]
-INFO: [Synth 8-4765] Removing register instance (\genblk1[0].cycle_ctr_reg[21] ) from module (MpuHsa_Wrapper) as it is equivalent to (\genblk1[1].cycle_ctr_reg[21] ) and driving same net [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:283]
-INFO: [Synth 8-4765] Removing register instance (\genblk1[0].cycle_ctr_reg[20] ) from module (MpuHsa_Wrapper) as it is equivalent to (\genblk1[1].cycle_ctr_reg[20] ) and driving same net [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:283]
-INFO: [Synth 8-4765] Removing register instance (\genblk1[0].cycle_ctr_reg[19] ) from module (MpuHsa_Wrapper) as it is equivalent to (\genblk1[1].cycle_ctr_reg[19] ) and driving same net [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:283]
-INFO: [Synth 8-4765] Removing register instance (\genblk1[0].cycle_ctr_reg[18] ) from module (MpuHsa_Wrapper) as it is equivalent to (\genblk1[1].cycle_ctr_reg[18] ) and driving same net [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:283]
-INFO: [Synth 8-4765] Removing register instance (\genblk1[0].cycle_ctr_reg[17] ) from module (MpuHsa_Wrapper) as it is equivalent to (\genblk1[1].cycle_ctr_reg[17] ) and driving same net [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:283]
-INFO: [Synth 8-4765] Removing register instance (\genblk1[0].cycle_ctr_reg[16] ) from module (MpuHsa_Wrapper) as it is equivalent to (\genblk1[1].cycle_ctr_reg[16] ) and driving same net [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:283]
-INFO: [Synth 8-4765] Removing register instance (\genblk1[0].cycle_ctr_reg[15] ) from module (MpuHsa_Wrapper) as it is equivalent to (\genblk1[1].cycle_ctr_reg[15] ) and driving same net [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:283]
-INFO: [Synth 8-4765] Removing register instance (\genblk1[0].cycle_ctr_reg[14] ) from module (MpuHsa_Wrapper) as it is equivalent to (\genblk1[1].cycle_ctr_reg[14] ) and driving same net [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:283]
-INFO: [Synth 8-4765] Removing register instance (\genblk1[0].cycle_ctr_reg[13] ) from module (MpuHsa_Wrapper) as it is equivalent to (\genblk1[1].cycle_ctr_reg[13] ) and driving same net [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:283]
-INFO: [Synth 8-4765] Removing register instance (\genblk1[0].cycle_ctr_reg[12] ) from module (MpuHsa_Wrapper) as it is equivalent to (\genblk1[1].cycle_ctr_reg[12] ) and driving same net [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:283]
-INFO: [Synth 8-4765] Removing register instance (\genblk1[0].cycle_ctr_reg[11] ) from module (MpuHsa_Wrapper) as it is equivalent to (\genblk1[1].cycle_ctr_reg[11] ) and driving same net [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:283]
-INFO: [Synth 8-4765] Removing register instance (\genblk1[0].cycle_ctr_reg[10] ) from module (MpuHsa_Wrapper) as it is equivalent to (\genblk1[1].cycle_ctr_reg[10] ) and driving same net [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:283]
-INFO: [Synth 8-4765] Removing register instance (\genblk1[0].cycle_ctr_reg[9] ) from module (MpuHsa_Wrapper) as it is equivalent to (\genblk1[1].cycle_ctr_reg[9] ) and driving same net [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:283]
-INFO: [Synth 8-4765] Removing register instance (\genblk1[0].cycle_ctr_reg[8] ) from module (MpuHsa_Wrapper) as it is equivalent to (\genblk1[1].cycle_ctr_reg[8] ) and driving same net [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:283]
-INFO: [Synth 8-4765] Removing register instance (\genblk1[0].cycle_ctr_reg[7] ) from module (MpuHsa_Wrapper) as it is equivalent to (\genblk1[1].cycle_ctr_reg[7] ) and driving same net [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:283]
-INFO: [Synth 8-4765] Removing register instance (\genblk1[0].cycle_ctr_reg[6] ) from module (MpuHsa_Wrapper) as it is equivalent to (\genblk1[1].cycle_ctr_reg[6] ) and driving same net [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:283]
-INFO: [Synth 8-4765] Removing register instance (\genblk1[0].cycle_ctr_reg[5] ) from module (MpuHsa_Wrapper) as it is equivalent to (\genblk1[1].cycle_ctr_reg[5] ) and driving same net [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:283]
-INFO: [Synth 8-4765] Removing register instance (\genblk1[0].cycle_ctr_reg[4] ) from module (MpuHsa_Wrapper) as it is equivalent to (\genblk1[1].cycle_ctr_reg[4] ) and driving same net [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:283]
-INFO: [Synth 8-4765] Removing register instance (\genblk1[0].cycle_ctr_reg[3] ) from module (MpuHsa_Wrapper) as it is equivalent to (\genblk1[1].cycle_ctr_reg[3] ) and driving same net [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:283]
-INFO: [Synth 8-4765] Removing register instance (\genblk1[0].cycle_ctr_reg[2] ) from module (MpuHsa_Wrapper) as it is equivalent to (\genblk1[1].cycle_ctr_reg[2] ) and driving same net [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:283]
-INFO: [Synth 8-4765] Removing register instance (\genblk1[0].cycle_ctr_reg[1] ) from module (MpuHsa_Wrapper) as it is equivalent to (\genblk1[1].cycle_ctr_reg[1] ) and driving same net [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:283]
-INFO: [Synth 8-4765] Removing register instance (\genblk1[0].cycle_ctr_reg[0] ) from module (MpuHsa_Wrapper) as it is equivalent to (\genblk1[1].cycle_ctr_reg[0] ) and driving same net [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:283]
-INFO: [Synth 8-4765] Removing register instance (\genblk1[0].compute_done_reg ) from module (MpuHsa_Wrapper) as it is equivalent to (\genblk1[1].compute_done_reg ) and driving same net [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:282]
-INFO: [Synth 8-4765] Removing register instance (\genblk1[0].act_col_left_edge_reg[0] ) from module (MpuHsa_Wrapper) as it is equivalent to (\genblk1[1].act_col_left_edge_reg[0] ) and driving same net [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:284]
-INFO: [Synth 8-4765] Removing register instance (\genblk1[0].act_col_right_edge_reg[0] ) from module (MpuHsa_Wrapper) as it is equivalent to (\genblk1[1].act_col_right_edge_reg[0] ) and driving same net [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:285]
+INFO: [Synth 8-4765] Removing register instance (\genblk1[0].cycle_ctr_reg[31] ) from module (MpuHsa_Wrapper) as it is equivalent to (\genblk1[1].cycle_ctr_reg[31] ) and driving same net [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:179]
+INFO: [Synth 8-4765] Removing register instance (\genblk1[0].cycle_ctr_reg[30] ) from module (MpuHsa_Wrapper) as it is equivalent to (\genblk1[1].cycle_ctr_reg[30] ) and driving same net [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:179]
+INFO: [Synth 8-4765] Removing register instance (\genblk1[0].cycle_ctr_reg[29] ) from module (MpuHsa_Wrapper) as it is equivalent to (\genblk1[1].cycle_ctr_reg[29] ) and driving same net [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:179]
+INFO: [Synth 8-4765] Removing register instance (\genblk1[0].cycle_ctr_reg[28] ) from module (MpuHsa_Wrapper) as it is equivalent to (\genblk1[1].cycle_ctr_reg[28] ) and driving same net [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:179]
+INFO: [Synth 8-4765] Removing register instance (\genblk1[0].cycle_ctr_reg[27] ) from module (MpuHsa_Wrapper) as it is equivalent to (\genblk1[1].cycle_ctr_reg[27] ) and driving same net [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:179]
+INFO: [Synth 8-4765] Removing register instance (\genblk1[0].cycle_ctr_reg[26] ) from module (MpuHsa_Wrapper) as it is equivalent to (\genblk1[1].cycle_ctr_reg[26] ) and driving same net [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:179]
+INFO: [Synth 8-4765] Removing register instance (\genblk1[0].cycle_ctr_reg[25] ) from module (MpuHsa_Wrapper) as it is equivalent to (\genblk1[1].cycle_ctr_reg[25] ) and driving same net [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:179]
+INFO: [Synth 8-4765] Removing register instance (\genblk1[0].cycle_ctr_reg[24] ) from module (MpuHsa_Wrapper) as it is equivalent to (\genblk1[1].cycle_ctr_reg[24] ) and driving same net [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:179]
+INFO: [Synth 8-4765] Removing register instance (\genblk1[0].cycle_ctr_reg[23] ) from module (MpuHsa_Wrapper) as it is equivalent to (\genblk1[1].cycle_ctr_reg[23] ) and driving same net [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:179]
+INFO: [Synth 8-4765] Removing register instance (\genblk1[0].cycle_ctr_reg[22] ) from module (MpuHsa_Wrapper) as it is equivalent to (\genblk1[1].cycle_ctr_reg[22] ) and driving same net [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:179]
+INFO: [Synth 8-4765] Removing register instance (\genblk1[0].cycle_ctr_reg[21] ) from module (MpuHsa_Wrapper) as it is equivalent to (\genblk1[1].cycle_ctr_reg[21] ) and driving same net [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:179]
+INFO: [Synth 8-4765] Removing register instance (\genblk1[0].cycle_ctr_reg[20] ) from module (MpuHsa_Wrapper) as it is equivalent to (\genblk1[1].cycle_ctr_reg[20] ) and driving same net [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:179]
+INFO: [Synth 8-4765] Removing register instance (\genblk1[0].cycle_ctr_reg[19] ) from module (MpuHsa_Wrapper) as it is equivalent to (\genblk1[1].cycle_ctr_reg[19] ) and driving same net [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:179]
+INFO: [Synth 8-4765] Removing register instance (\genblk1[0].cycle_ctr_reg[18] ) from module (MpuHsa_Wrapper) as it is equivalent to (\genblk1[1].cycle_ctr_reg[18] ) and driving same net [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:179]
+INFO: [Synth 8-4765] Removing register instance (\genblk1[0].cycle_ctr_reg[17] ) from module (MpuHsa_Wrapper) as it is equivalent to (\genblk1[1].cycle_ctr_reg[17] ) and driving same net [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:179]
+INFO: [Synth 8-4765] Removing register instance (\genblk1[0].cycle_ctr_reg[16] ) from module (MpuHsa_Wrapper) as it is equivalent to (\genblk1[1].cycle_ctr_reg[16] ) and driving same net [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:179]
+INFO: [Synth 8-4765] Removing register instance (\genblk1[0].cycle_ctr_reg[15] ) from module (MpuHsa_Wrapper) as it is equivalent to (\genblk1[1].cycle_ctr_reg[15] ) and driving same net [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:179]
+INFO: [Synth 8-4765] Removing register instance (\genblk1[0].cycle_ctr_reg[14] ) from module (MpuHsa_Wrapper) as it is equivalent to (\genblk1[1].cycle_ctr_reg[14] ) and driving same net [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:179]
+INFO: [Synth 8-4765] Removing register instance (\genblk1[0].cycle_ctr_reg[13] ) from module (MpuHsa_Wrapper) as it is equivalent to (\genblk1[1].cycle_ctr_reg[13] ) and driving same net [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:179]
+INFO: [Synth 8-4765] Removing register instance (\genblk1[0].cycle_ctr_reg[12] ) from module (MpuHsa_Wrapper) as it is equivalent to (\genblk1[1].cycle_ctr_reg[12] ) and driving same net [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:179]
+INFO: [Synth 8-4765] Removing register instance (\genblk1[0].cycle_ctr_reg[11] ) from module (MpuHsa_Wrapper) as it is equivalent to (\genblk1[1].cycle_ctr_reg[11] ) and driving same net [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:179]
+INFO: [Synth 8-4765] Removing register instance (\genblk1[0].cycle_ctr_reg[10] ) from module (MpuHsa_Wrapper) as it is equivalent to (\genblk1[1].cycle_ctr_reg[10] ) and driving same net [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:179]
+INFO: [Synth 8-4765] Removing register instance (\genblk1[0].cycle_ctr_reg[9] ) from module (MpuHsa_Wrapper) as it is equivalent to (\genblk1[1].cycle_ctr_reg[9] ) and driving same net [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:179]
+INFO: [Synth 8-4765] Removing register instance (\genblk1[0].cycle_ctr_reg[8] ) from module (MpuHsa_Wrapper) as it is equivalent to (\genblk1[1].cycle_ctr_reg[8] ) and driving same net [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:179]
+INFO: [Synth 8-4765] Removing register instance (\genblk1[0].cycle_ctr_reg[7] ) from module (MpuHsa_Wrapper) as it is equivalent to (\genblk1[1].cycle_ctr_reg[7] ) and driving same net [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:179]
+INFO: [Synth 8-4765] Removing register instance (\genblk1[0].cycle_ctr_reg[6] ) from module (MpuHsa_Wrapper) as it is equivalent to (\genblk1[1].cycle_ctr_reg[6] ) and driving same net [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:179]
+INFO: [Synth 8-4765] Removing register instance (\genblk1[0].cycle_ctr_reg[5] ) from module (MpuHsa_Wrapper) as it is equivalent to (\genblk1[1].cycle_ctr_reg[5] ) and driving same net [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:179]
+INFO: [Synth 8-4765] Removing register instance (\genblk1[0].cycle_ctr_reg[4] ) from module (MpuHsa_Wrapper) as it is equivalent to (\genblk1[1].cycle_ctr_reg[4] ) and driving same net [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:179]
+INFO: [Synth 8-4765] Removing register instance (\genblk1[0].cycle_ctr_reg[3] ) from module (MpuHsa_Wrapper) as it is equivalent to (\genblk1[1].cycle_ctr_reg[3] ) and driving same net [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:179]
+INFO: [Synth 8-4765] Removing register instance (\genblk1[0].cycle_ctr_reg[2] ) from module (MpuHsa_Wrapper) as it is equivalent to (\genblk1[1].cycle_ctr_reg[2] ) and driving same net [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:179]
+INFO: [Synth 8-4765] Removing register instance (\genblk1[0].cycle_ctr_reg[1] ) from module (MpuHsa_Wrapper) as it is equivalent to (\genblk1[1].cycle_ctr_reg[1] ) and driving same net [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:179]
+INFO: [Synth 8-4765] Removing register instance (\genblk1[0].cycle_ctr_reg[0] ) from module (MpuHsa_Wrapper) as it is equivalent to (\genblk1[1].cycle_ctr_reg[0] ) and driving same net [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:179]
+INFO: [Synth 8-4765] Removing register instance (\genblk1[0].act_col_left_edge_reg[0] ) from module (MpuHsa_Wrapper) as it is equivalent to (\genblk1[1].act_col_left_edge_reg[0] ) and driving same net [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:180]
+INFO: [Synth 8-4765] Removing register instance (\genblk1[0].act_col_right_edge_reg[0] ) from module (MpuHsa_Wrapper) as it is equivalent to (\genblk1[1].act_col_right_edge_reg[0] ) and driving same net [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:181]
+INFO: [Synth 8-4765] Removing register instance (\genblk1[0].compute_done_reg ) from module (MpuHsa_Wrapper) as it is equivalent to (\genblk1[1].compute_done_reg ) and driving same net [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:178]
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1442.348 ; gain = 112.328
+Finished Technology Mapping : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1446.328 ; gain = 117.137
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -285,39 +328,38 @@ Start Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper.sv:78]
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1442.348 ; gain = 112.328
+Finished IO Insertion : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1446.328 ; gain = 117.137
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1442.348 ; gain = 112.328
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1446.328 ; gain = 117.137
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1442.348 ; gain = 112.328
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1446.328 ; gain = 117.137
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1442.348 ; gain = 112.328
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1446.328 ; gain = 117.137
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1442.348 ; gain = 112.328
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1446.328 ; gain = 117.137
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1442.348 ; gain = 112.328
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1446.328 ; gain = 117.137
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -327,8 +369,7 @@ Report BlackBoxes:
 +------+--------------+----------+
 |      |BlackBox name |Instances |
 +------+--------------+----------+
-|1     |ila_0         |         1|
-|2     |clk_wiz_0     |         1|
+|1     |clk_wiz_0     |         1|
 +------+--------------+----------+
 
 Report Cell Usage: 
@@ -336,43 +377,41 @@ Report Cell Usage:
 |      |Cell    |Count |
 +------+--------+------+
 |1     |clk_wiz |     1|
-|2     |ila     |     1|
-|3     |CARRY4  |    24|
-|4     |LUT1    |     8|
-|5     |LUT2    |    69|
-|6     |LUT3    |    53|
-|7     |LUT4    |    48|
-|8     |LUT5    |    54|
-|9     |LUT6    |    92|
-|10    |MUXF7   |     1|
-|11    |FDRE    |   313|
-|12    |FDSE    |    13|
-|13    |IBUF    |     2|
-|14    |OBUF    |    33|
+|2     |CARRY4  |    19|
+|3     |LUT1    |     5|
+|4     |LUT2    |    69|
+|5     |LUT3    |    40|
+|6     |LUT4    |    46|
+|7     |LUT5    |    42|
+|8     |LUT6    |    97|
+|9     |MUXF7   |     1|
+|10    |FDRE    |   200|
+|11    |IBUF    |     2|
+|12    |OBUF    |    17|
 +------+--------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1442.348 ; gain = 112.328
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1446.328 ; gain = 117.137
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:20 . Memory (MB): peak = 1442.348 ; gain = 0.000
-Synthesis Optimization Complete : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1442.348 ; gain = 112.328
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:20 . Memory (MB): peak = 1446.328 ; gain = 0.000
+Synthesis Optimization Complete : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1446.328 ; gain = 117.137
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1442.348 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 25 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1446.328 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 20 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1442.348 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1446.328 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Synth Design complete, checksum: f0f9d559
+Synth Design complete, checksum: 15420ebe
 INFO: [Common 17-83] Releasing license: Synthesis
-77 Infos, 46 Warnings, 0 Critical Warnings and 0 Errors encountered.
+68 Infos, 96 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1442.348 ; gain = 112.328
+synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 1446.328 ; gain = 117.137
 INFO: [Common 17-600] The following parameters have non-default value.
 tcl.collectionResultDisplayLimit
 INFO: [Common 17-1381] The checkpoint 'C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.runs/synth_1/MpuHsa_Wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file MpuHsa_Wrapper_utilization_synth.rpt -pb MpuHsa_Wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Dec  3 18:45:16 2025...
+INFO: [Common 17-206] Exiting Vivado at Thu Dec  4 05:45:35 2025...

@@ -108,6 +108,9 @@ read_verilog -library xil_defaultlib -sv {
   C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/SynchCDC.sv
   C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/SpVpu.sv
   C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/SpMac.sv
+  C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/MpuHsa_Wrapper_latched.sv
+  C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/Hsa_Wrapper.sv
+  C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/new/SpVpu_Wrapper.v
 }
 read_ip -quiet C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci
 set_property used_in_implementation false [get_files -all c:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc]

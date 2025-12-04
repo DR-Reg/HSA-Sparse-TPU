@@ -1,39 +1,60 @@
 +--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
 |       Launch Clock       |      Capture Clock       |                                                 Pin                                                      |
 +--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
-|       clk_uart_clk_wiz_0 |              sys_clk_pin |                                             debug_ila/inst/ila_core_inst/shifted_data_in_reg[7][7]_srl8/D|
-|       clk_uart_clk_wiz_0 |              sys_clk_pin |                                             debug_ila/inst/ila_core_inst/shifted_data_in_reg[7][0]_srl8/D|
-|       clk_uart_clk_wiz_0 |              sys_clk_pin |                                             debug_ila/inst/ila_core_inst/shifted_data_in_reg[7][3]_srl8/D|
-|       clk_uart_clk_wiz_0 |              sys_clk_pin |                                             debug_ila/inst/ila_core_inst/shifted_data_in_reg[7][8]_srl8/D|
-|       clk_uart_clk_wiz_0 |              sys_clk_pin |                                             debug_ila/inst/ila_core_inst/shifted_data_in_reg[7][4]_srl8/D|
-|       clk_uart_clk_wiz_0 |              sys_clk_pin |                                            debug_ila/inst/ila_core_inst/shifted_data_in_reg[7][10]_srl8/D|
-|       clk_uart_clk_wiz_0 |              sys_clk_pin |                                            debug_ila/inst/ila_core_inst/shifted_data_in_reg[7][11]_srl8/D|
-|       clk_uart_clk_wiz_0 |              sys_clk_pin |                                             debug_ila/inst/ila_core_inst/shifted_data_in_reg[7][6]_srl8/D|
-|       clk_uart_clk_wiz_0 |              sys_clk_pin |                                            debug_ila/inst/ila_core_inst/shifted_data_in_reg[7][13]_srl8/D|
-|       clk_uart_clk_wiz_0 |              sys_clk_pin |                                            debug_ila/inst/ila_core_inst/shifted_data_in_reg[7][14]_srl8/D|
-|       clk_uart_clk_wiz_0 |              sys_clk_pin |                                            debug_ila/inst/ila_core_inst/shifted_data_in_reg[7][12]_srl8/D|
-|       clk_uart_clk_wiz_0 |              sys_clk_pin |                                             debug_ila/inst/ila_core_inst/shifted_data_in_reg[7][9]_srl8/D|
-|       clk_uart_clk_wiz_0 |              sys_clk_pin |                                             debug_ila/inst/ila_core_inst/shifted_data_in_reg[7][5]_srl8/D|
-|       clk_uart_clk_wiz_0 |              sys_clk_pin |debug_ila/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[2].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg[8]/D|
-|       clk_uart_clk_wiz_0 |              sys_clk_pin |debug_ila/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[2].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg[10]/D|
-|       clk_uart_clk_wiz_0 |              sys_clk_pin |debug_ila/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[2].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg[0]/D|
-|       clk_uart_clk_wiz_0 |              sys_clk_pin |debug_ila/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[2].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg[6]/D|
-|       clk_uart_clk_wiz_0 |              sys_clk_pin |debug_ila/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[2].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg[2]/D|
-|       clk_uart_clk_wiz_0 |              sys_clk_pin |debug_ila/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[0].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg[0]/D|
-|       clk_uart_clk_wiz_0 |              sys_clk_pin |debug_ila/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[2].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg[3]/D|
-|       clk_uart_clk_wiz_0 |              sys_clk_pin |debug_ila/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[2].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg[4]/D|
-|       clk_uart_clk_wiz_0 |              sys_clk_pin |debug_ila/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[2].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg[1]/D|
-|       clk_uart_clk_wiz_0 |              sys_clk_pin |debug_ila/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[2].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg[11]/D|
-|       clk_uart_clk_wiz_0 |              sys_clk_pin |debug_ila/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[2].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg[5]/D|
-|       clk_uart_clk_wiz_0 |              sys_clk_pin |debug_ila/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[2].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg[7]/D|
-|       clk_uart_clk_wiz_0 |              sys_clk_pin |debug_ila/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[2].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg[9]/D|
-|         clk100_clk_wiz_0 |              sys_clk_pin |                                             debug_ila/inst/ila_core_inst/shifted_data_in_reg[7][1]_srl8/D|
-|         clk100_clk_wiz_0 |              sys_clk_pin |debug_ila/inst/ila_core_inst/u_trig/U_TM/N_DDR_MODE.G_NMU[1].U_M/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/probeDelay1_reg[0]/D|
-|       clk_uart_clk_wiz_0 |         clk100_clk_wiz_0 |                                                                                       reset_cdc/ff1_reg/D|
-|       clk_uart_clk_wiz_0 |         clk100_clk_wiz_0 |                                                                                   hex_display_reg[0][0]/D|
-|       clk_uart_clk_wiz_0 |         clk100_clk_wiz_0 |                                                                                   hex_display_reg[1][0]/D|
-|       clk_uart_clk_wiz_0 |         clk100_clk_wiz_0 |                                                                                   hex_display_reg[0][1]/D|
-|       clk_uart_clk_wiz_0 |         clk100_clk_wiz_0 |                                                                                     opmode0_cdc/ff1_reg/D|
-|       clk_uart_clk_wiz_0 |         clk100_clk_wiz_0 |                                                                                     opmode1_cdc/ff1_reg/D|
-|         clk100_clk_wiz_0 |       clk_uart_clk_wiz_0 |                                                                                   comp_done_cdc/ff1_reg/D|
+|       clk_uart_clk_wiz_0 |         clk100_clk_wiz_0 |                                                                            genblk1[1].cycle_ctr_reg[29]/D|
+|       clk_uart_clk_wiz_0 |         clk100_clk_wiz_0 |                                                                             genblk1[1].compute_done_reg/D|
+|       clk_uart_clk_wiz_0 |         clk100_clk_wiz_0 |                                                                            genblk1[1].cycle_ctr_reg[30]/D|
+|       clk_uart_clk_wiz_0 |         clk100_clk_wiz_0 |                                                                            genblk1[1].cycle_ctr_reg[25]/D|
+|       clk_uart_clk_wiz_0 |         clk100_clk_wiz_0 |                                                                            genblk1[1].cycle_ctr_reg[31]/D|
+|       clk_uart_clk_wiz_0 |         clk100_clk_wiz_0 |                                                                            genblk1[1].cycle_ctr_reg[26]/D|
+|       clk_uart_clk_wiz_0 |         clk100_clk_wiz_0 |                                                                            genblk1[1].cycle_ctr_reg[21]/D|
+|       clk_uart_clk_wiz_0 |         clk100_clk_wiz_0 |                                                                            genblk1[1].cycle_ctr_reg[27]/D|
+|       clk_uart_clk_wiz_0 |         clk100_clk_wiz_0 |                                                                            genblk1[1].cycle_ctr_reg[28]/D|
+|       clk_uart_clk_wiz_0 |         clk100_clk_wiz_0 |                                                                            genblk1[1].cycle_ctr_reg[22]/D|
+|       clk_uart_clk_wiz_0 |         clk100_clk_wiz_0 |                                                                            genblk1[1].cycle_ctr_reg[17]/D|
+|       clk_uart_clk_wiz_0 |         clk100_clk_wiz_0 |                                                                            genblk1[1].cycle_ctr_reg[23]/D|
+|       clk_uart_clk_wiz_0 |         clk100_clk_wiz_0 |                                                                            genblk1[1].cycle_ctr_reg[24]/D|
+|       clk_uart_clk_wiz_0 |         clk100_clk_wiz_0 |                                                                             genblk1[1].cycle_ctr_reg[5]/D|
+|       clk_uart_clk_wiz_0 |         clk100_clk_wiz_0 |                                                                             genblk1[1].cycle_ctr_reg[4]/D|
+|       clk_uart_clk_wiz_0 |         clk100_clk_wiz_0 |                                                                            genblk1[1].cycle_ctr_reg[13]/D|
+|       clk_uart_clk_wiz_0 |         clk100_clk_wiz_0 |                                                                             genblk1[1].cycle_ctr_reg[9]/D|
+|       clk_uart_clk_wiz_0 |         clk100_clk_wiz_0 |                                                                            genblk1[1].cycle_ctr_reg[12]/D|
+|       clk_uart_clk_wiz_0 |         clk100_clk_wiz_0 |                                                                             genblk1[1].cycle_ctr_reg[8]/D|
+|       clk_uart_clk_wiz_0 |         clk100_clk_wiz_0 |                                                                            genblk1[1].cycle_ctr_reg[16]/D|
+|       clk_uart_clk_wiz_0 |         clk100_clk_wiz_0 |                                                                            genblk1[1].cycle_ctr_reg[20]/D|
+|       clk_uart_clk_wiz_0 |         clk100_clk_wiz_0 |                                                                             genblk1[1].cycle_ctr_reg[6]/D|
+|       clk_uart_clk_wiz_0 |         clk100_clk_wiz_0 |                                                                             genblk1[1].cycle_ctr_reg[7]/D|
+|       clk_uart_clk_wiz_0 |         clk100_clk_wiz_0 |                                                                            genblk1[1].cycle_ctr_reg[14]/D|
+|       clk_uart_clk_wiz_0 |         clk100_clk_wiz_0 |                                                                            genblk1[1].cycle_ctr_reg[10]/D|
+|       clk_uart_clk_wiz_0 |         clk100_clk_wiz_0 |                                                                            genblk1[1].cycle_ctr_reg[15]/D|
+|       clk_uart_clk_wiz_0 |         clk100_clk_wiz_0 |                                                                            genblk1[1].cycle_ctr_reg[11]/D|
+|       clk_uart_clk_wiz_0 |         clk100_clk_wiz_0 |                                                                            genblk1[1].cycle_ctr_reg[18]/D|
+|       clk_uart_clk_wiz_0 |         clk100_clk_wiz_0 |                                                                            genblk1[1].cycle_ctr_reg[19]/D|
+|       clk_uart_clk_wiz_0 |         clk100_clk_wiz_0 |                                                                             genblk1[1].cycle_ctr_reg[2]/D|
+|       clk_uart_clk_wiz_0 |         clk100_clk_wiz_0 |                                                                             genblk1[1].cycle_ctr_reg[3]/D|
+|       clk_uart_clk_wiz_0 |         clk100_clk_wiz_0 |                                                                             genblk1[1].cycle_ctr_reg[1]/D|
+|       clk_uart_clk_wiz_0 |         clk100_clk_wiz_0 |                                                                             genblk1[1].cycle_ctr_reg[0]/D|
+|       clk_uart_clk_wiz_0 |         clk100_clk_wiz_0 |                                                                            genblk1[1].cycle_ctr_reg[10]/R|
+|       clk_uart_clk_wiz_0 |         clk100_clk_wiz_0 |                                                                            genblk1[1].cycle_ctr_reg[11]/R|
+|       clk_uart_clk_wiz_0 |         clk100_clk_wiz_0 |                                                                             genblk1[1].cycle_ctr_reg[8]/R|
+|       clk_uart_clk_wiz_0 |         clk100_clk_wiz_0 |                                                                             genblk1[1].cycle_ctr_reg[9]/R|
+|       clk_uart_clk_wiz_0 |         clk100_clk_wiz_0 |                                                                            genblk1[1].cycle_ctr_reg[13]/R|
+|       clk_uart_clk_wiz_0 |         clk100_clk_wiz_0 |                                                                            genblk1[1].cycle_ctr_reg[14]/R|
+|       clk_uart_clk_wiz_0 |         clk100_clk_wiz_0 |                                                                            genblk1[1].cycle_ctr_reg[15]/R|
+|       clk_uart_clk_wiz_0 |         clk100_clk_wiz_0 |                                                                            genblk1[1].cycle_ctr_reg[12]/R|
+|       clk_uart_clk_wiz_0 |         clk100_clk_wiz_0 |                                                                            genblk1[1].cycle_ctr_reg[16]/R|
+|       clk_uart_clk_wiz_0 |         clk100_clk_wiz_0 |                                                                            genblk1[1].cycle_ctr_reg[17]/R|
+|       clk_uart_clk_wiz_0 |         clk100_clk_wiz_0 |                                                                            genblk1[1].cycle_ctr_reg[18]/R|
+|       clk_uart_clk_wiz_0 |         clk100_clk_wiz_0 |                                                                            genblk1[1].cycle_ctr_reg[19]/R|
+|       clk_uart_clk_wiz_0 |         clk100_clk_wiz_0 |                                                                             genblk1[1].compute_done_reg/R|
+|       clk_uart_clk_wiz_0 |         clk100_clk_wiz_0 |                                                                             genblk1[1].cycle_ctr_reg[4]/R|
+|       clk_uart_clk_wiz_0 |         clk100_clk_wiz_0 |                                                                             genblk1[1].cycle_ctr_reg[5]/R|
+|       clk_uart_clk_wiz_0 |         clk100_clk_wiz_0 |                                                                             genblk1[1].cycle_ctr_reg[7]/R|
+|       clk_uart_clk_wiz_0 |         clk100_clk_wiz_0 |                                                                             genblk1[1].cycle_ctr_reg[6]/R|
+|       clk_uart_clk_wiz_0 |         clk100_clk_wiz_0 |                                                                             genblk1[1].cycle_ctr_reg[0]/R|
+|       clk_uart_clk_wiz_0 |         clk100_clk_wiz_0 |                                                                             genblk1[1].cycle_ctr_reg[1]/R|
+|       clk_uart_clk_wiz_0 |         clk100_clk_wiz_0 |                                                                             genblk1[1].cycle_ctr_reg[3]/R|
+|       clk_uart_clk_wiz_0 |         clk100_clk_wiz_0 |                                                                             genblk1[1].cycle_ctr_reg[2]/R|
+|       clk100_clk_wiz_0_1 |       clk_uart_clk_wiz_0 |                                                                    FSM_sequential_operating_mode_reg[1]/D|
+|       clk100_clk_wiz_0_1 |       clk_uart_clk_wiz_0 |                                                                    FSM_sequential_operating_mode_reg[0]/D|
 +--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+

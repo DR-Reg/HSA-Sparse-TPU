@@ -1,0 +1,6 @@
+Time resolution is 1 ps
+(cc:         3; i:          0) result[          0][         0] = 15
+(cc:         4; i:          0) result[          0][         1] =  9
+(cc:         4; i:          1) result[          1][         0] =  4
+(cc:         5; i:          1) result[          1][         1] = 10
+$finish called at time : 500 ns : File "C:/Users/dr309/Desktop/ECE-552-project/FPGA_impl/FPGA_impl.srcs/sim_1/new/Hsa_tb.sv" Line 183
