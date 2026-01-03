@@ -25,7 +25,7 @@ The overall architecture can be seen in the following block diagram:
 
 The MAC units change depending on which specific unit is being implemented (VPU/MPU/HSA etc). For the Sparse unit, the following structure is relevant:
 
-![Sparse Unit](images/spmac.png)
+![Sparse Unit](images/spmac-white.png)
 
 The whole 'TPU' essentially acts as an FSM between the following states:
 1. Receive data (alignment + weight loading)
